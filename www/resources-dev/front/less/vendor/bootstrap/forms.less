@@ -159,6 +159,9 @@ output {
 	textarea& {
 		height: auto;
 	}
+	select&{
+		padding: @padding-base-vertical + 1 @padding-base-horizontal;
+	}
 }
 
 
@@ -570,6 +573,10 @@ input[type="checkbox"] {
 	// Make form groups behave like rows
 	.form-group {
 		.make-row();
+	}
+	
+	.control-label {
+		font-weight: bold;
 	}
 
 	// Reset spacing and right align labels, but scope to media queries so that
