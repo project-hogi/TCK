@@ -7,7 +7,6 @@
 			<a href="sub.php">sub 바로가기</a>
 		</div>
 	</div>
-	<div class="body">
-		<div id="container">
-			<div class="container">
+	<div id="container">
+		<div class="container">
 <!-- Header.html -->
