@@ -6,10 +6,10 @@
 <?php require "part/header-sub.php"; ?>
 3차 댑스일 경우 ...<br>
 댑스 구분은 파일명 에서 - 로 한다.<br>
-Depth 0 ID : <?php echo getDepthId(0); ?><br>
-Depth 1 ID : <?php echo getDepthId(1); ?><br>
-Depth 2 ID : <?php echo getDepthId(2); ?><br>
-Depth 3 ID : <?php echo getDepthId(3); ?><br>
+Depth 0 ID : <?php echo getDepthId($pagePath, 0); ?><br>
+Depth 1 ID : <?php echo getDepthId($pagePath, 1); ?><br>
+Depth 2 ID : <?php echo getDepthId($pagePath, 2); ?><br>
+Depth 3 ID : <?php echo getDepthId($pagePath, 3); ?><br>
 <?php require "part/footer-sub.php"; ?>
 <?php require "part/footer.php"; ?>
 <?php require "part/app-footer.php"; ?>
