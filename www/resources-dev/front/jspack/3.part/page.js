@@ -2,10 +2,10 @@
 
 (function($) {
 
-	$(document).on('appinit', function() {
+	$(document).on("appinitOnce", function() {
 	});
 
-	$(document).on('ready', function() {
+	$(document).on("appinit", function() {
 	});
 
 })(jQuery);
