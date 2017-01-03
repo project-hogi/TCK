@@ -1,0 +1,138 @@
+
+/* 공지사항 팝업 */
+.modal-backdrop{
+	z-index: 500;
+}
+.modal-dialog{
+	z-index: 1000;
+}
+div#detail-popup{
+	width: 580px;
+	
+	.head{
+		position: relative;
+		height: 45px;
+		background-color: #ed5d54;
+		
+	}
+	.cont{
+		padding: 24px;
+		.cont-box{
+			
+		}
+		
+	}
+	
+	.tool-list{
+		li{
+			display: inline-block;
+			background-repeat: no-repeat;
+			background-position: 20px 50%;
+			&.edit{
+				background-image: url(../images/part/popup/edit.png);
+			}
+			&.delete{
+				background-image: url(../images/part/popup/delete.png);
+			}
+			&.comment{
+				background-image: url(../images/part/popup/comment.png);
+			}
+			&.print{
+				background-image: url(../images/part/popup/print.png);
+			}
+			
+			a{
+				display: block;
+				height: 45px;
+				padding: 0 15px 0 40px;
+				line-height: 45px;
+				span{
+					font-size: 16px;
+					color: #fff;
+				}
+			}
+		}
+	}
+	
+	.notice-detail{
+		border-top: 2px solid #555;
+		.title{
+			font-size: 14px;
+			color: #444;
+			font-weight: bold;
+			line-height: 40px;
+			padding-left: 15px;
+		}
+		.writer-info{
+			border-top: 1px solid #cfcfcf;
+			li{
+				display: inline-block;
+				padding: 0 5px 0 15px;
+				font-size: 12px;
+				line-height: 40px;
+				color: #999;
+				background-image: url(../images/part/popup/bar.png);
+				background-position: 8px 50%;
+				background-repeat: no-repeat;
+				&:first-child{
+					background: none;
+				}
+				span{
+					padding-left: 5px;
+					font-size: 12px;
+					line-height: 40px;
+					color: #444;
+				}
+			}
+		}
+		.textarea-style{
+			border-top: 1px solid #cfcfcf;
+			border-bottom: 1px solid #cfcfcf;
+			height: 180px;
+			overflow-y: scroll;
+			padding: 15px;
+		}
+		.comment-list{
+			li{
+				position: relative;
+				line-height: 40px;
+				font-size: 11px;
+				color: #555;
+				padding-right: 130px;
+				border-top: 1px solid #eee;
+				&:first-child{
+					border: none;
+				}
+				.name{
+					display: block;
+					float: left;
+					width: 70px;
+					text-align: center;
+					color: #999;
+				}
+				.datetime{
+					position: absolute;
+					right: 0;
+					top: 0;
+					display: block;
+					width: 130px;
+					padding-right: 10px;
+					text-align: right;
+				}
+				
+			}
+		}
+	}
+	.close-popup{
+		z-index: 1010;
+		position: absolute;
+		right: 0;
+		top: 0;
+		display: block;
+		width: 45px;
+		height: 45px;
+		background: url(../images/part/popup/close.png) 50% 50% no-repeat;
+	}
+	
+	
+}

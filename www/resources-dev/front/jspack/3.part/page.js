@@ -48,6 +48,35 @@
 			});
 		});
 
+		$('.list-classify').each(function(){
+			var $listClassify = $(this);
+			var $li = $('li', $listClassify);
+
+			var $a = $('a', $li);
+			var $span = $('span', $a);
+
+			$li.on('click', function(e){
+				e.preventDefault();
+				var $thisLi = $(this);
+				$('.tool-menu').empty();
+				$thisLi.siblings().removeClass('active');
+				$thisLi.addClass('active');
+				$("<div class='tool-menu'><ul><li><a href='#'>이름바꾸기</a></li><li><a href='#'>위로 이동</a></li><li><a href='#'>아래로 이동</a></li></ul></div>").appendTo('#wrap').css({top: event.pageY + "px", left: event.pageX + "px"});
+			});
+
+
+		});
+
+		$('.search-box').each(function(){
+			var $searchBox = $(this);
+
+			var selectTarget = $('select', $searchBox);
+			selectTarget.change(function(){
+				var select_name = $(this).children('option:selected').text();
+				$(this).siblings('label').text(select_name);
+			});
+
+		});
 
 	});
 

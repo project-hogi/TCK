@@ -44,12 +44,32 @@ h1,h2,h3,h4,h5,h6{
 	-ms-transition: padding ease-in-out 0.3s;
 	-o-transition: padding ease-in-out 0.3s;
 	transition: padding ease-in-out 0.3s;
-}
-#container.folding{
-	padding-left: 80px;
-}
-#container .section{
-	padding: 40px;
+	&:after{
+		clear: both;
+		display: block;
+		content: '';
+	}
+	
+	.section{
+		padding: 40px;
+		height: 100%;
+		&:after{
+			clear: both;
+			display: block;
+			content: '';
+		}
+		#content{
+			height: 100%;
+			&:after{
+				clear: both;
+				display: block;
+				content: '';
+			}
+		}
+	}
+	.folding{
+		padding-left: 80px;
+	}
 }
 #footer{
 	position: fixed;
