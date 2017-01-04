@@ -1,6 +1,6 @@
 <?php
 $config["themeColor"] = "#977049";
-$config["sitename"] = "ㅇㅇㅇ";
+$config["sitename"] = "TCK";
 $config["mode"] = "front";
 $config["isDev"] = true;
 $config["cssTableMinWidth"] = 640;
@@ -65,7 +65,10 @@ $config["imageDir"] = $config["resourcesDir"]  . "/images";
 <?php } else { ?>
 <!--[if lt IE 9]><script src="<?php echo $config["resourcesDir"]; ?>/js/vendor/jquery-1.12.2.min.js"></script><![endif]-->
 <!--[if gte IE 9]><!--><script src="<?php echo $config["resourcesDir"]; ?>/js/vendor/jquery.min.js"></script><![endif]-->
-<script src="<?php echo $config["resourcesDir"]; ?>/js/script.min.js"></script>
+<script src="<?php echo $config["resourcesDir"]; ?>/js/script.js"></script>
+<script src="<?php echo $config["resourcesDir"]; ?>/js/part/dtree.js"></script>
+<script src="<?php echo $config["resourcesDir"]; ?>/js/part/app.js"></script>
+<script src="<?php echo $config["resourcesDir"]; ?>/js/part/page.js"></script>
 <?php } ?>
 </head>
 <body class="<?php echo getBodyClass($pagePath, $bodyClass); ?>">

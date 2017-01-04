@@ -54,16 +54,83 @@
 
 			var $a = $('a', $li);
 			var $span = $('span', $a);
-
-			$li.on('click', function(e){
+			var $toolMenu = $('.tool-menu');
+			$li.on('contextmenu', function(e){
 				e.preventDefault();
 				var $thisLi = $(this);
 				$('.tool-menu').empty();
 				$thisLi.siblings().removeClass('active');
 				$thisLi.addClass('active');
 				$("<div class='tool-menu'><ul><li><a href='#'>이름바꾸기</a></li><li><a href='#'>위로 이동</a></li><li><a href='#'>아래로 이동</a></li></ul></div>").appendTo('#wrap').css({top: event.pageY + "px", left: event.pageX + "px"});
+				$('#wrap').on('click', function(){
+					$('.tool-menu').empty();
+				});
+				$toolMenu.focusout(function(){
+					$(this).empty();
+					console.log('2222')
+				});
 			});
+			$li.on('click', function(e){
+				e.preventDefault();
+				$li.removeClass('active');
+				$(this).addClass('active');
+			});
+		});
+		$('.dtree').each(function(){
+			var $dtree = $(this);
+			var $dTreeNodeHome = $('>.dTreeNode', $dtree);
+			var $dTreeNodeMom1 = $('>.clip', $dtree);
+			var $dTreeNodeMom2 = $('>.clip', $dTreeNodeMom1);
+			var $dTreeNodeDepth1 = $('>.dTreeNode', $dTreeNodeMom1);
+			var $dTreeNodeDepth$ = $('>.dTreeNode', $dTreeNodeMom2);
 
+			var $toolMenu = $('.tool-menu');
+
+			$dTreeNodeHome.on('contextmenu', function(e){
+				e.preventDefault();
+				var $thisLi = $(this);
+				$('.tool-menu').empty();
+				$thisLi.siblings().removeClass('active');
+				$thisLi.addClass('active');
+				$("<div class='tool-menu'><ul><li><a data-toggle='modal' href='#inputpopup'>새 회사 등록</a></li></ul></div>").appendTo('#wrap').css({top: event.pageY + "px", left: event.pageX + "px"});
+				$('#wrap').on('click', function(){
+					$('.tool-menu').empty();
+				});
+				$toolMenu.focusout(function(){
+					$(this).empty();
+					console.log('2222')
+				});
+			});
+			$dTreeNodeDepth1.on('contextmenu', function(e){
+				e.preventDefault();
+				var $thisLi = $(this);
+				$('.tool-menu').empty();
+				$thisLi.siblings().removeClass('active');
+				$thisLi.addClass('active');
+				$("<div class='tool-menu'><ul><li><a data-toggle='modal' href='#inputpopup'>새 조직 등록</a></li><li><a data-toggle='modal' href='#inputpopup'>회사명 바꾸기</a></li><li><a data-toggle='modal' href='#inputpopup'>삭제</a></li><li><a data-toggle='modal' href='#inputpopup'>정보</a></li></ul></div>").appendTo('#wrap').css({top: event.pageY + "px", left: event.pageX + "px"});
+				$('#wrap').on('click', function(){
+					$('.tool-menu').empty();
+				});
+				$toolMenu.focusout(function(){
+					$(this).empty();
+					console.log('2222')
+				});
+			});
+			$dTreeNodeDepth$.on('contextmenu', function(e){
+				e.preventDefault();
+				var $thisLi = $(this);
+				$('.tool-menu').empty();
+				$thisLi.siblings().removeClass('active');
+				$thisLi.addClass('active');
+				$("<div class='tool-menu'><ul><li><a data-toggle='modal' href='#inputpopup'>조직명 바꾸기</a></li><li><a data-toggle='modal' href='#inputpopup'>삭제</a></li><li><a data-toggle='modal' href='#inputpopup'>정보</a></li></ul></div>").appendTo('#wrap').css({top: event.pageY + "px", left: event.pageX + "px"});
+				$('#wrap').on('click', function(){
+					$('.tool-menu').empty();
+				});
+				$toolMenu.focusout(function(){
+					$(this).empty();
+					console.log('2222')
+				});
+			});
 
 		});
 
@@ -75,8 +142,19 @@
 				var select_name = $(this).children('option:selected').text();
 				$(this).siblings('label').text(select_name);
 			});
-
 		});
+
+		var fileTarget = $('.filebox .upload-hidden');
+		fileTarget.on('change', function(){
+			/* 값이 변경되면 */
+			if(window.FileReader){
+				/* modern browser */
+				var filename = $(this)[0].files[0].name; } else { /* old IE */
+				var filename = $(this).val().split('/').pop().split('\\').pop(); /* 파일명만 추출 */
+			} /* 추출한 파일명 삽입 */
+			$(this).siblings('.upload-name').val(filename);
+		});
+
 
 	});
 

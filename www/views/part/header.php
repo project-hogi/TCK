@@ -13,11 +13,18 @@
 			<ul class="lnb-list">
 				<li class="eq-0">
 					<a href="#">
-						<span>운영실적</span>
+						<span>운영설정</span>
 					</a>
 					<ul>
 						<li>
-							<a href="#">
+							<a href="notice.php">
+									<span>
+										공지사항
+									</span>
+							</a>
+						</li>
+						<li>
+							<a href="sub.php">
 									<span>
 										상담 운영 설정
 									</span>
@@ -101,14 +108,21 @@
 					</ul>
 				</li>
 				<li class="eq-4">
-					<a href="#">
+					<a href="master.php">
 						<span>마스터 메뉴</span>
 					</a>
 					<ul>
 						<li>
-							<a href="#">
+							<a href="master-admin.php">
 									<span>
 										조직 및 계정 관리
+									</span>
+							</a>
+						</li>
+						<li>
+							<a href="master-notice.php">
+									<span>
+										공지사항
 									</span>
 							</a>
 						</li>

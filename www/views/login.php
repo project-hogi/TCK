@@ -59,7 +59,4 @@
 		</div>
 	</div>
 
-
-
-
 <?php require "part/app-footer.php"; ?>

@@ -481,6 +481,12 @@ div#container{
 		}
 	}
 	
+	/* content-title */
+	.content-title{
+		font-size: 18px;
+		color: #222;
+		margin: 15px 3px 7px;
+	}
 	
 	/* group-box */
 	.group-box{
@@ -495,6 +501,7 @@ div#container{
 			width: 200px;
 			height: 100%;
 			padding: 15px;
+			background-color: #fbfbfb;
 			border: 1px solid #c6c6c6;
 		}
 		.content-box{
@@ -508,6 +515,7 @@ div#container{
 	
 	.list-title-area{
 		height: 40px;
+		background-color: #f9f9f9;
 		border-top: 2px solid #000;
 		border-bottom: 1px solid #ccc;
 		&:after{
@@ -521,13 +529,31 @@ div#container{
 			line-height: 40px;
 			border-left: 1px solid #eee;
 			text-align: center;
+			font-size: 12px;
+			color: #666;
+			font-weight: bold;
 			a{
 				display: block;
-				line-height: 40px;
 				text-align: center;
+				color: #666;
+				font-weight: bold;
 			}
 			&:first-child{
 				border-left: none;
+			}
+			&.select{
+				label{
+					position: relative;
+					padding-left: 15px;
+				}
+				input[type="checkbox"]{
+					position: absolute;
+					left: -2px;
+					top: 10px;
+				}
+			}
+			&.lineup{
+				background: url(../images/part/section/form/lineup.png) 50% 90% no-repeat;
 			}
 		}
 		&.has-1item{
@@ -567,16 +593,16 @@ div#container{
 					width: 10%;
 				}
 				&.name{
-					width: 15%;
+					width: 12%;
 				}
 				&.id{
 					width: 15%;
 				}
 				&.authority{
-					width: 15%;
+					width: 20%;
 				}
 				&.group{
-					width: 20%;
+					width: 18%;
 				}
 				&.position{
 					width: 15%;
@@ -677,16 +703,16 @@ div#container{
 						width: 10%;
 					}
 					&.name{
-						width: 15%;
+						width: 12%;
 					}
 					&.id{
 						width: 15%;
 					}
 					&.authority{
-						width: 15%;
+						width: 20%;
 					}
 					&.group{
-						width: 20%;
+						width: 18%;
 					}
 					&.position{
 						width: 15%;
@@ -716,6 +742,7 @@ div#container{
 			display: block;
 			content: '';
 		}
+		
 		button,
 		a{
 			display: inline-block;

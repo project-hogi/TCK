@@ -6,7 +6,7 @@ $config['isBuild'] = true;
 requirePhpInPath("views", "../html/views");
 
 chdir("../tool/front");
-exec("grunt build");
+exec("grunt buildnormal");
 chdir("../../www");
 
 while (true) {
