@@ -1,3 +1,6 @@
+/**
+ * Created by 호기 퍼블리싱팀 조용준 on 2017-01-09.
+ */
 "use strict";
 
 (function($) {

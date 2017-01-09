@@ -23,14 +23,34 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="sub.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="sub.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/views/sub.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="589">
-                  <caret line="1258" column="37" selection-start-line="1258" selection-start-column="37" selection-end-line="1258" selection-end-column="37" />
+                <state relative-caret-position="437">
+                  <caret line="1250" column="40" selection-start-line="1250" selection-start-column="40" selection-end-line="1250" selection-end-column="40" />
                   <folding>
                     <element signature="e#27114#27135#0#HTML" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/views/part/header.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="665">
+                  <caret line="141" column="33" selection-start-line="141" selection-start-column="33" selection-end-line="141" selection-end-column="33" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app-header.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/www/views/part/app-header.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1099">
+                  <caret line="71" column="63" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="63" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -104,8 +124,8 @@
           <file leaf-file-name="section.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/resources-dev/front/less/part/section.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1085">
-                  <caret line="584" column="29" selection-start-line="584" selection-start-column="29" selection-end-line="584" selection-end-column="29" />
+                <state relative-caret-position="686">
+                  <caret line="563" column="19" selection-start-line="563" selection-start-column="19" selection-end-line="563" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -198,7 +218,6 @@
         <option value="$PROJECT_DIR$/www/resources-dev/front/less/part/style/popup.less" />
         <option value="$PROJECT_DIR$/www/views/master-notice.php" />
         <option value="$PROJECT_DIR$/www/views/master-admin.php" />
-        <option value="$PROJECT_DIR$/www/views/part/app-header.php" />
         <option value="$PROJECT_DIR$/www/views/login.php" />
         <option value="$PROJECT_DIR$/www/views/index.php" />
         <option value="$PROJECT_DIR$/www/views/part/header.php" />
@@ -215,6 +234,7 @@
         <option value="$PROJECT_DIR$/www/resources-dev/front/less/part/style/table.less" />
         <option value="$PROJECT_DIR$/www/views/sub.php" />
         <option value="$PROJECT_DIR$/www/resources-dev/front/less/part/section.less" />
+        <option value="$PROJECT_DIR$/www/views/part/app-header.php" />
       </list>
     </option>
   </component>
@@ -627,12 +647,12 @@
       <workItem from="1483502648784" duration="1853000" />
       <workItem from="1483504535828" duration="15471000" />
       <workItem from="1483932338026" duration="312000" />
-      <workItem from="1483933393117" duration="21006000" />
+      <workItem from="1483933393117" duration="21297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103785000" />
+    <option name="totallyTimeSpent" value="104076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2483" height="1452" extended-state="0" />
@@ -874,13 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/views/part/app-header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="43" column="71" selection-start-line="43" selection-start-column="71" selection-end-line="43" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/views/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1026">
@@ -899,14 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
           <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/views/part/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="141" column="33" selection-start-line="141" selection-start-column="33" selection-end-line="141" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,20 +1011,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/resources-dev/front/less/part/section.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="563" column="19" selection-start-line="563" selection-start-column="19" selection-end-line="563" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/views/sub.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="1040" column="38" selection-start-line="1040" selection-start-column="38" selection-end-line="1040" selection-end-column="38" />
+        <state relative-caret-position="437">
+          <caret line="1250" column="40" selection-start-line="1250" selection-start-column="40" selection-end-line="1250" selection-end-column="40" />
           <folding>
             <element signature="e#27114#27135#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/resources-dev/front/less/part/section.less">
+    <entry file="file://$PROJECT_DIR$/www/views/part/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1085">
-          <caret line="584" column="29" selection-start-line="584" selection-start-column="29" selection-end-line="584" selection-end-column="29" />
+        <state relative-caret-position="665">
+          <caret line="141" column="33" selection-start-line="141" selection-start-column="33" selection-end-line="141" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/views/part/app-header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1099">
+          <caret line="71" column="63" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="63" />
           <folding />
         </state>
       </provider>
