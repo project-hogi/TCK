@@ -10,12 +10,20 @@ h1,h2,h3,h4,h5,h6{
 #wrap{
 	margin: auto;
 	height: 100%;
+	min-width: 1280px;
+	overflow-x: scroll;
+	
+}
+body,
+#wrap{
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
 }
 #wrap,
 #header-top,
 #footer{
-	min-width: 1280px;
-	overflow-x: hidden;
+	width: 100%;
 }
 #header-left{
 	z-index: 120;
@@ -36,16 +44,17 @@ h1,h2,h3,h4,h5,h6{
 }
 #container{
 	z-index: 50;
+	width: 100%;
 	height: 100%;
-	padding: 70px 37px 60px 230px;
-	margin-right: -20px;
-	overflow-y: scroll;
+	padding: 70px 0 60px 230px;
 	overflow-x: hidden;
+	box-sizing: border-box;
 	-webkit-transition: padding ease-in-out 0.3s;
 	-moz-transition: padding ease-in-out 0.3s;
 	-ms-transition: padding ease-in-out 0.3s;
 	-o-transition: padding ease-in-out 0.3s;
 	transition: padding ease-in-out 0.3s;
+	
 	&:after{
 		clear: both;
 		display: block;
@@ -55,6 +64,7 @@ h1,h2,h3,h4,h5,h6{
 	.section{
 		padding: 40px;
 		height: 100%;
+		overflow-y: scroll;
 		&:after{
 			clear: both;
 			display: block;
@@ -62,6 +72,7 @@ h1,h2,h3,h4,h5,h6{
 		}
 		#content{
 			height: 100%;
+			margin-bottom: -40px;
 			&:after{
 				clear: both;
 				display: block;
@@ -317,6 +328,60 @@ h1,h2,h3,h4,h5,h6{
 				&.eq-1{
 					padding: 0 35px 0 10px;
 					background: url(../images/part/layout/gnb/info.png) 92% 50% no-repeat;
+				}
+				&.individual{
+					position: relative;
+					
+					&:hover,
+					&:focus,
+					&.active,
+					&.on{
+						ul.individual-list{
+							display: block;
+						}
+					}
+					
+					ul.individual-list{
+						display: none;
+						position: absolute;
+						left: 0;
+						top: 70px;
+						width: 100%;
+						border: 1px solid #ccc;
+						background-color: #fff;
+						li{
+							display: inline-block;
+							width: 100%;
+							height: 40px;
+							float: left;
+							border-top: 1px solid #ccc;
+							&:first-child{
+								border-top: none;
+							}
+							&:after{
+								display: none;
+							}
+							
+							&:hover,
+							&:focus,
+							&.active,
+							&.on{
+								background-color: #ffbe1c;
+								a{
+									color: #fff;
+									
+								}
+							}
+							a{
+								text-indent: 15px;
+								display: block;
+								line-height: 40px;
+								color: #000;
+								
+							}
+						}
+						
+					}
 				}
 			}
 		}

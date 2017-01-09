@@ -144,9 +144,29 @@
 						트랜스코스모스코리아
 					</span>
 				</li>
-				<li class="eq-1">
+				<li class="eq-1 individual">
 					<span class="name">김유신</span>
 					님 환영합니다.
+
+					<ul class="individual-list">
+						<li>
+							<a href="#">
+								로그아웃
+							</a>
+						</li>
+						<!--
+						<li>
+							<a href="#">
+								로그인
+							</a>
+						</li>
+						-->
+						<li>
+							<a href="#">
+								내정보
+							</a>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		</div>
