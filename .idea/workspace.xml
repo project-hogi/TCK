@@ -124,8 +124,8 @@
           <file leaf-file-name="section.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/resources-dev/front/less/part/section.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="686">
-                  <caret line="563" column="19" selection-start-line="563" selection-start-column="19" selection-end-line="563" selection-end-column="19" />
+                <state relative-caret-position="268">
+                  <caret line="541" column="9" selection-start-line="541" selection-start-column="9" selection-end-line="541" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -647,12 +647,12 @@
       <workItem from="1483502648784" duration="1853000" />
       <workItem from="1483504535828" duration="15471000" />
       <workItem from="1483932338026" duration="312000" />
-      <workItem from="1483933393117" duration="21297000" />
+      <workItem from="1483933393117" duration="21349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104076000" />
+    <option name="totallyTimeSpent" value="104128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2483" height="1452" extended-state="0" />
@@ -1011,18 +1011,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/resources-dev/front/less/part/section.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="563" column="19" selection-start-line="563" selection-start-column="19" selection-end-line="563" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/views/sub.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="1250" column="40" selection-start-line="1250" selection-start-column="40" selection-end-line="1250" selection-end-column="40" />
+        <state relative-caret-position="714">
+          <caret line="1040" column="38" selection-start-line="1040" selection-start-column="38" selection-end-line="1040" selection-end-column="38" />
           <folding>
             <element signature="e#27114#27135#0#HTML" expanded="true" />
           </folding>
@@ -1041,6 +1033,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1099">
           <caret line="71" column="63" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/resources-dev/front/less/part/section.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="541" column="9" selection-start-line="541" selection-start-column="9" selection-end-line="541" selection-end-column="9" />
           <folding />
         </state>
       </provider>

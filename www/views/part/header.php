@@ -24,28 +24,28 @@
 							</a>
 						</li>
 						<li>
-							<a href="sub.php">
+							<a href="setting.php">
 									<span>
 										상담 운영 설정
 									</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="setting.php">
 									<span>
 										챗봇 설정
 									</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="setting.php">
 									<span>
 										차단 설정
 									</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="setting.php">
 									<span>
 										과금 보기
 									</span>
@@ -54,26 +54,24 @@
 					</ul>
 				</li>
 				<li class="eq-1 active">
-					<a href="#">
+					<a href="bill.php">
 						<span>과금내역</span>
+					</a>
+				</li>
+				<li class="eq-2">
+					<a href="stats.php">
+						<span>통계지표</span>
 					</a>
 					<ul>
 						<li>
-							<a href="#">
+							<a href="stats.php">
 									<span>
 										통계
 									</span>
 							</a>
 						</li>
-						<li class="active">
-							<a href="#">
-									<span>
-										채팅세션현황
-									</span>
-							</a>
-						</li>
 						<li>
-							<a href="#">
+							<a href="stats.php">
 									<span>
 										대시보드
 									</span>
@@ -81,28 +79,23 @@
 						</li>
 					</ul>
 				</li>
-				<li class="eq-2">
-					<a href="#">
-						<span>통계지표</span>
-					</a>
-				</li>
 				<li class="eq-3">
-					<a href="#">
+					<a href="rawdate.php">
 						<span>Rawdate</span>
 					</a>
 					<ul>
 						<li>
-							<a href="#">
-									<span>
-										데이터 보관
-									</span>
+							<a href="rawdate.php">
+								<span>
+									데이터 보관
+								</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">
-									<span>
-										rawdata
-									</span>
+							<a href="rawdate.php">
+								<span>
+									rawdata
+								</span>
 							</a>
 						</li>
 					</ul>

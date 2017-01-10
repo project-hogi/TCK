@@ -1,11 +1,21 @@
-/* classify-option */
-.classify-option{
+/* radio-option */
+table{
+	.radio-option{
+		vertical-align: middle;
+		margin: 0;
+	}
+
+		
+}
+.radio-option{
 	display: inline-block;
 	margin-bottom: 15px;
 	border: 1px solid #d7d7d7;
 	background-color: #fafafa;
 	border-radius: 3px;
 	overflow: hidden;
+	width: 152px;
+	
 	&:after{
 		clear: both;
 		display: block;
@@ -17,17 +27,23 @@
 	input[type="radio"]+label{
 		display: block;
 		float: left;
-		width: 76px;
+		width: 50%;
 		margin: 0;
 		padding: 0;
 		text-align: center;
 		font-size: 14px;
 		line-height: 28px;
 		color: #a0a0a0;
+		background-color: #fafafa;
 		
 		
 	}
 	input[type="radio"]:checked+label{
+		background-color: #fcbc1d;
+		border-color: #d7a11b;
+		color: #fff;
+	}
+	[id*="off"]:checked+label{
 		background-color: #000;
 		color: #fff;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#616161+0,a1a1a1+100 */
@@ -38,6 +54,7 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#616161', endColorstr='#a1a1a1',GradientType=0 ); /* IE6-9 */
 		
 	}
+	
 }
 
 /* switch */
@@ -80,4 +97,184 @@
 }
 .form-group{
 	margin: 0;
+}
+
+
+/* select type */
+.select-type{
+	z-index: 1;
+	position: relative;
+	width: 100%;
+	height: 26px;
+	line-height: 26px;
+	background-color: #fff;
+	overflow: hidden;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	overflow: hidden;
+	
+	&.main{
+		display: inline-block;
+		width: 160px;
+		height: 40px;
+		vertical-align: middle;
+		border-color: #ccc;
+		
+		.select-label,
+		select{
+			line-height: 40px;
+			margin: 0;
+		}
+		
+	}
+	
+	.select-label{
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 10px;
+		height: 100%;
+		line-height: 26px;
+		color: #999;
+		font-size: 12px;
+	}
+	select{
+		width: 100%;
+		height: 100%;
+		line-height: 26px;
+		font-family: inherit;
+		border: 0;
+		opacity: 0;
+		filter: lph(opacity=0);
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+	
+	&:after{
+		z-index: -1;
+		position: absolute;
+		right: 0;
+		top: 0;
+		clear: both;
+		display: block;
+		content: '';
+		width: 30px;
+		height: 100%;
+		background-color: #fafafa;
+		background-image: url(../images/part/section/form/select-down.png);
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		border-left: 1px solid #d5d5d5;
+	}
+}
+
+/* date-option */
+.date-option{
+	position: relative;
+	display: inline-block;
+	width: 160px;
+	margin: 0 auto;
+	background-color: #fff;
+	.datepicker{
+		position: relative;
+		width: 100%;
+		height: 40px;
+		margin: 0 auto;
+		padding: 0 0 0 10px;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		outline: none;
+		font-size: 12px;
+		font-weight: bold;
+		color: #888;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		background: url(../images/part/section/form/calender-bg.png) 100% 50% no-repeat;
+		
+		&::-webkit-datetime-edit-month-field {
+			color: #777;
+		}
+		&::-webkit-datetime-edit-day-field {
+			color: #999;
+		}
+		&::-webkit-datetime-edit-year-field {
+			color: #555;
+		}
+		
+	}
+	
+}
+
+/* time-count */
+.time-count{
+	display: inline-block;
+	max-width: 88px;
+	.form-control{
+		text-align: center;
+	}
+	&~label{
+		display: inline-block;
+		margin: 0 5px;
+	}
+}
+
+/* form-group */
+.form-group{
+	&.in-table{
+		padding-left: 5px;
+		input[type="radio"]{
+			margin: 0;
+			padding: 0;
+			vertical-align: middle;
+		}
+		label{
+			line-height: 32px;
+			margin: 0;
+			padding: 0;
+			vertical-align: middle;
+			margin: 0 10px 0 0;
+		}
+	}
+}
+
+
+/* from-check */
+.form-check{
+	input[type="checkbox"]{
+		display: none;
+		
+		&~label{
+			position: relative;
+			height: 32px;
+			line-height: 32px;
+			font-size: 12px;
+			font-weight: bold;
+			color: #888;
+			padding-left: 30px;
+			cursor: pointer;
+			span{
+				
+			}
+			&:before{
+				position: absolute;
+				left: 0;
+				top: 50%;
+				margin-top: -10px;
+				clear: both;
+				display: block;
+				content: '';
+				width: 21px;
+				height: 21px;
+				background: url(../images/part/login/checkbox.png) 0 0 no-repeat;
+			}
+		}
+		&:checked~label:before{
+			background-image: url(../images/part/login/checkbox-checked.png);
+		}
+	}
+	
+	
+	
+	
 }

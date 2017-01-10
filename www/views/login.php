@@ -16,7 +16,7 @@
 						</span>
 					</a>
 				</h1>
-				<form action="" method="post">
+				<form action="/view/notice.php" method="post">
 					<div class="form-group id">
 						<label for="id" class="sr-only">아이디</label>
 						<input type="text" name="id" id="id" class="form-control" placeholder="아이디">

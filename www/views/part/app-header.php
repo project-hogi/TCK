@@ -70,6 +70,7 @@ $config["imageDir"] = $config["resourcesDir"]  . "/images";
 <script src="<?php echo $config["resourcesDir"]; ?>/js/part/app.js"></script>
 <script src="<?php echo $config["resourcesDir"]; ?>/js/part/page.js"></script>
 <script src="<?php echo $config["resourcesDir"]; ?>/js/part/tab.js"></script>
+<script src="<?php echo $config["resourcesDir"]; ?>/js/part/input.js"></script>
 <?php } ?>
 </head>
 <body class="<?php echo getBodyClass($pagePath, $bodyClass); ?>">

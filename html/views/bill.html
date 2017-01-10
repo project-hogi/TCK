@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<!-- App Header.html -->
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="TCK 홈페이지 입니다." />
+<title>TCK</title>
+<meta name="theme-color" content="#977049">
+<meta name="msapplication-navbutton-color" content="#977049">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-startup-image" href="../resources/favicon/android-icon-192x192.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../resources/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../resources/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../resources/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../resources/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../resources/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../resources/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../resources/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../resources/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../resources/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../resources/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../resources/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../resources/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../resources/favicon/favicon-16x16.png">
+<link rel="shortcut icon" href="../resources/favicon/favicon.ico">
+<link rel="manifest" href="../resources/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#977049">
+<meta name="msapplication-TileImage" content="../resources/favicon/android-icon-192x192.png">
+<meta property="og:title" content="TCK">
+<meta property="og:url" content="http://도메인/">
+<meta property="og:image" content="../resources/favicon/android-icon-192x192.png">
+<meta property="og:description" content="TCK 홈페이지 입니다.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TCK">
+<meta name="twitter:url" content="http://도메인/">
+<meta name="twitter:image" content="../resources/favicon/android-icon-192x192.png">
+<meta name="twitter:description" content="TCK 홈페이지 입니다.">
+<link rel="stylesheet" href="../resources/front/css/phone.min.css" />
+<link rel="stylesheet" href="../resources/front-legacy/css/legacy-phone.css" />
+<!--[if lt IE 9]><script src="../resources/front/js/vendor/jquery-1.12.2.min.js"></script><![endif]-->
+<!--[if gte IE 9]><!--><script src="../resources/front/js/vendor/jquery.min.js"></script><![endif]-->
+<script src="../resources/front/js/script.js"></script>
+<script src="../resources/front/js/part/dtree.js"></script>
+<script src="../resources/front/js/part/app.js"></script>
+<script src="../resources/front/js/part/page.js"></script>
+<script src="../resources/front/js/part/tab.js"></script>
+<script src="../resources/front/js/part/input.js"></script>
+</head>
+<body class="layout-page">
+<!-- //App Header.html -->
+<div id="wrap">
+
+	<div id="header-left">
+		<h1 class="logo">
+			<a href="/">
+					<span class="sr-only">
+						TCK 비즈 메시지센터
+						<span class="small">trans cosmos korea biz message center</span>
+					</span>
+			</a>
+		</h1>
+		<div class="lnb">
+			<ul class="lnb-list">
+				<li class="eq-0">
+					<a href="#">
+						<span>운영설정</span>
+					</a>
+					<ul>
+						<li>
+							<a href="notice.html">
+									<span>
+										공지사항
+									</span>
+							</a>
+						</li>
+						<li>
+							<a href="setting.html">
+									<span>
+										상담 운영 설정
+									</span>
+							</a>
+						</li>
+						<li>
+							<a href="setting.html">
+									<span>
+										챗봇 설정
+									</span>
+							</a>
+						</li>
+						<li>
+							<a href="setting.html">
+									<span>
+										차단 설정
+									</span>
+							</a>
+						</li>
+						<li>
+							<a href="setting.html">
+									<span>
+										과금 보기
+									</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="eq-1 active">
+					<a href="bill.html">
+						<span>과금내역</span>
+					</a>
+				</li>
+				<li class="eq-2">
+					<a href="stats.html">
+						<span>통계지표</span>
+					</a>
+					<ul>
+						<li>
+							<a href="stats.html">
+									<span>
+										통계
+									</span>
+							</a>
+						</li>
+						<li>
+							<a href="stats.html">
+									<span>
+										대시보드
+									</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="eq-3">
+					<a href="rawdate.html">
+						<span>Rawdate</span>
+					</a>
+					<ul>
+						<li>
+							<a href="rawdate.html">
+								<span>
+									데이터 보관
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="rawdate.html">
+								<span>
+									rawdata
+								</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="eq-4">
+					<a href="master.html">
+						<span>마스터 메뉴</span>
+					</a>
+					<ul>
+						<li>
+							<a href="master-admin.html">
+									<span>
+										조직 및 계정 관리
+									</span>
+							</a>
+						</li>
+						<li>
+							<a href="master-notice.html">
+									<span>
+										공지사항
+									</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<a href="#" class="header-left-control">
+			<span class="sr-only">
+				header-left controller
+			</span>
+		</a>
+	</div>
+	<div id="header-top">
+		<div class="gnb">
+			<ul>
+				<li class="eq-0">
+					<span class="company">
+						트랜스코스모스코리아
+					</span>
+				</li>
+				<li class="eq-1 individual">
+					<span class="name">김유신</span>
+					님 환영합니다.
+
+					<ul class="individual-list">
+						<li>
+							<a href="#">
+								로그아웃
+							</a>
+						</li>
+						<!--
+						<li>
+							<a href="#">
+								로그인
+							</a>
+						</li>
+						-->
+						<li>
+							<a href="#">
+								내정보
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="member">
+			<a href="#">
+				<span class="sr-only">member</span>
+			</a>
+		</div>
+	</div>
+	<!-- /#header -->
+	<div id="container"><div class="section">
+		<div id="content">
+
+	<form action="">
+		<div class="search-box">
+			<button type="button" class="all-btn">
+				<span>
+					전체
+				</span>
+			</button>
+			<button type="button" class="all-btn">
+				<span>
+					회사
+				</span>
+			</button>
+			<button type="button" class="all-btn">
+				<span>
+					PJ
+				</span>
+			</button>
+			<div class="text-box ml10">
+				<label for="" class="sr-only">회사명 검색창</label>
+				<input type="text" class="form-control" placeholder="회사명">
+			</div>
+			<div class="select-box">
+				<label for="select" class="select-label"><span>선택하세요</span></label>
+				<select name="" id="select" class="form-control">
+					<option value="">선택하세요</option>
+					<option value="">옵션1</option>
+					<option value="">옵션2</option>
+					<option value="">옵션3</option>
+				</select>
+			</div>
+			<button type="submit" class="submit-btn">
+				<span class="sr-only">
+					검색버튼
+				</span>
+			</button>
+		</div>
+	</form>
+	<div class="result-box">
+		<table class="table-primary table-strip">
+			<thead>
+			<tr>
+				<th>번호</th>
+				<th>회사명</th>
+				<th>프로젝트</th>
+				<th>발신프로필</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>01</td>
+				<td>트랜스코스모스 코리아</td>
+				<td class="text-left">A-01 비즈 메시지센터 프로젝트(Contact Center Infra Service)</td>
+				<td>@Biz_tck__a001</td>
+			</tr>
+			<tr>
+				<td>02</td>
+				<td>(주)일렉트릭 코리아</td>
+				<td class="text-left">웹구축, 모바일, SNS, 인터넷광고, EC운영지원 등을 활용하여 고객기업의 eBusiness Needs에 부합하는 최적의 마케팅</td>
+				<td>@Biz_tck__a002</td>
+			</tr>
+			<tr>
+				<td>03</td>
+				<td></td>
+				<td class="text-left">고품질의 Work flow를 제공하는 컨설팅 역량과 최첨단 시스템</td>
+				<td>@Biz_tck__a003</td>
+			</tr>
+			<tr>
+				<td>04</td>
+				<td></td>
+				<td class="text-left">A-02 비즈 메시지센터 프로젝트</td>
+				<td>@Biz_tck__a004</td>
+			</tr>
+			<tr>
+				<td>05</td>
+				<td></td>
+				<td class="text-left">A-03 비즈 메시지센터 프로젝트</td>
+				<td>@Biz_tck__a005</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="result-foot">
+		<div class="page-control">
+			<a href="#" class="prev">이전</a>
+			<ul class="pagination">
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+			<a href="#" class="next">다음</a>
+		</div>
+	</div>
+	<div class="con-area">
+		<form action="">
+			<div class="content-box">
+				<button type="submit" class="btn-type">
+							<span>
+								연도
+							</span>
+				</button>
+				<button type="submit" class="btn-type">
+							<span>
+								일
+							</span>
+				</button>
+				<button type="submit" class="btn-type">
+							<span>
+								월
+							</span>
+				</button>
+				<div class="date-option ml10">
+					<input class="datepicker" data-date-format="mm/dd/yyyy">
+				</div>
+				<span>~<span class="sr-only">부터</span></span>
+				<div class="date-option">
+					<input class="datepicker" data-date-format="mm/dd/yyyy">
+				</div>
+				<span class="sr-only">까지</span>
+				<button type="submit" class="btn-type btn-search">
+							<span class="sr-only">
+								검색
+							</span>
+				</button>
+				<div class="count-area">
+					<div class="month">
+						<strong>
+							11
+						</strong>
+						월
+					</div>
+					<div class="won">
+						총 금액
+						<strong>
+							1,5000,000
+						</strong>
+						원
+					</div>
+				</div>
+			</div>
+			<div class="bill-board">
+				<div class="bill-title">
+					<strong>
+						과금내역
+					</strong>
+				</div>
+				<div class="bill-con">
+					<div class="text-right">
+						<button type="submit" class="btn-type">
+							<span>
+								다운로드
+							</span>
+						</button>
+					</div>
+					<table class="table-bill">
+						<colgroup>
+							<col width="12.5%">
+							<col width="12.5%">
+							<col width="12.5%">
+							<col width="12.5%">
+							<col width="12.5%">
+							<col width="12.5%">
+							<col width="12.5%">
+							<col width="12.5%">
+						</colgroup>
+						<thead>
+						<tr>
+							<th>
+								회사
+							</th>
+							<th>
+								프로젝트
+							</th>
+							<th>
+								연도
+							</th>
+							<th>
+								월
+							</th>
+							<th>
+								일
+							</th>
+							<th>
+								비과금 건 수
+							</th>
+							<th>
+								과금 건 수
+							</th>
+							<th>
+								과금 비용
+							</th>
+						</tr>
+						</thead>
+						<tfoot>
+						<tr>
+							<td>
+								합계
+							</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>50,000,000</td>
+							<td>1,000,000</td>
+							<td>100,000,000</td>
+						</tr>
+						<tr>
+							<td>
+								평균
+							</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>4,166,666</td>
+							<td>83,333</td>
+							<td>8,333,333</td>
+						</tr>
+
+						</tfoot>
+						<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>2015</td>
+							<td>1</td>
+							<td></td>
+							<td>4,166,667</td>
+							<td>83,334</td>
+							<td>8,333,400</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>2015</td>
+							<td>2</td>
+							<td></td>
+							<td>4,166,667</td>
+							<td>83,334</td>
+							<td>8,333,400</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>2015</td>
+							<td>3</td>
+							<td></td>
+							<td>4,166,667</td>
+							<td>83,334</td>
+							<td>8,333,400</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>2015</td>
+							<td>4</td>
+							<td></td>
+							<td>4,166,667</td>
+							<td>83,334</td>
+							<td>8,333,400</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>2015</td>
+							<td>5</td>
+							<td></td>
+							<td>4,166,667</td>
+							<td>83,334</td>
+							<td>8,333,400</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>2015</td>
+							<td>6</td>
+							<td></td>
+							<td>4,166,667</td>
+							<td>83,334</td>
+							<td>8,333,400</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>2015</td>
+							<td>7</td>
+							<td></td>
+							<td>4,166,667</td>
+							<td>83,334</td>
+							<td>8,333,400</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>2015</td>
+							<td>8</td>
+							<td></td>
+							<td>4,166,667</td>
+							<td>83,334</td>
+							<td>8,333,400</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>2015</td>
+							<td>9</td>
+							<td></td>
+							<td>4,166,667</td>
+							<td>83,334</td>
+							<td>8,333,400</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>2015</td>
+							<td>10</td>
+							<td></td>
+							<td>4,166,667</td>
+							<td>83,334</td>
+							<td>8,333,400</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</form>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- /#content -->
+
+</div>
+<!-- /.section --></div>
+<!-- /#container -->
+<div id="footer">
+	<p class="copyright">
+		ⓒ 2017. transcosmos korea Inc. All rights reserved.
+	</p>
+	<a class="foot-logo">
+		<span class="sr-only">transcosmos</span>
+	</a>
+</div>
+<!-- /#footer -->
+
+</div>
+<!-- /#wrap --><!-- App Footer.html -->
+</body>
+</html>
+<!-- //App Footer.html -->

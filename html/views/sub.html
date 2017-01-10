@@ -47,6 +47,7 @@
 <script src="../resources/front/js/part/app.js"></script>
 <script src="../resources/front/js/part/page.js"></script>
 <script src="../resources/front/js/part/tab.js"></script>
+<script src="../resources/front/js/part/input.js"></script>
 </head>
 <body class="layout-page">
 <!-- //App Header.html -->
@@ -76,28 +77,28 @@
 							</a>
 						</li>
 						<li>
-							<a href="sub.html">
+							<a href="setting.html">
 									<span>
 										상담 운영 설정
 									</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="setting.html">
 									<span>
 										챗봇 설정
 									</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="setting.html">
 									<span>
 										차단 설정
 									</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="setting.html">
 									<span>
 										과금 보기
 									</span>
@@ -106,26 +107,24 @@
 					</ul>
 				</li>
 				<li class="eq-1 active">
-					<a href="#">
+					<a href="bill.html">
 						<span>과금내역</span>
+					</a>
+				</li>
+				<li class="eq-2">
+					<a href="stats.html">
+						<span>통계지표</span>
 					</a>
 					<ul>
 						<li>
-							<a href="#">
+							<a href="stats.html">
 									<span>
 										통계
 									</span>
 							</a>
 						</li>
-						<li class="active">
-							<a href="#">
-									<span>
-										채팅세션현황
-									</span>
-							</a>
-						</li>
 						<li>
-							<a href="#">
+							<a href="stats.html">
 									<span>
 										대시보드
 									</span>
@@ -133,28 +132,23 @@
 						</li>
 					</ul>
 				</li>
-				<li class="eq-2">
-					<a href="#">
-						<span>통계지표</span>
-					</a>
-				</li>
 				<li class="eq-3">
-					<a href="#">
+					<a href="rawdate.html">
 						<span>Rawdate</span>
 					</a>
 					<ul>
 						<li>
-							<a href="#">
-									<span>
-										데이터 보관
-									</span>
+							<a href="rawdate.html">
+								<span>
+									데이터 보관
+								</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">
-									<span>
-										rawdata
-									</span>
+							<a href="rawdate.html">
+								<span>
+									rawdata
+								</span>
 							</a>
 						</li>
 					</ul>
@@ -325,14 +319,14 @@
 	<!-- tab-menu -->
 	<div class="tab-menu depth-1">
 		<ul>
-			<li>
+			<li class="active">
 				<a href="#tab1">
 					<span>
 						상담 운영 설정
 					</span>
 				</a>
 			</li>
-			<li class="active">
+			<li>
 				<a href="#tab2">
 					<span>
 						챗봇 설정
@@ -341,13 +335,1382 @@
 			</li>
 		</ul>
 	</div>
-	<div id="tab1" class="tab-content">
-		<span>
-			tab1
-		</span>
+
+
+	<!-- tab1 -->
+	<div id="tab1" class="tab-content active">
+
+		<div class="tab-menu depth-2">
+			<ul>
+				<li>
+					<a href="#tab1-1">
+						<span>
+							상담 운영 시간
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#tab1-3">
+						<span>
+							휴무일및임시근무일
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#tab1-4">
+						<span>
+							세부 채팅 시간
+						</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="#tab1-5">
+						<span>
+							개인 정보 수집
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#tab1-6">
+						<span>
+							배분 설정
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="tab1-1" class="tab-content depth-2">
+
+			<form action="">
+				<div class="tab-menu depth-3">
+					<ul>
+						<li class="active">
+							<a href="#tab1-1-1">
+						<span>
+							요일별 시간 설정
+						</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="tab1-1-1" class="tab-content depth-3 active">
+					<div class="weekly">
+						<ul class="weekly-setting">
+							<li class="mon">
+								<div class="tit">
+									<strong>
+										월요일
+									</strong>
+								</div>
+								<div class="con">
+									<div class="from-group">
+
+										<div class="select-type">
+											<label for="select" class="select-label"><span>10:00</span></label>
+											<select name="" id="select" class="form-control">
+												<option value="" selected>10:00</option>
+												<option value="">11:00</option>
+												<option value="">12:00</option>
+												<option value="">13:00</option>
+												<option value="">14:00</option>
+												<option value="">15:00</option>
+												<option value="">16:00</option>
+												<option value="">17:00</option>
+												<option value="">18:00</option>
+											</select>
+										</div>
+
+									</div>
+									<span class="block-box">&#126;<span class="sr-only">부터</span></span>
+									<div class="from-group">
+
+										<div class="select-type">
+											<label for="select" class="select-label"><span>16:00</span></label>
+											<select name="" id="select" class="form-control">
+												<option value="">10:00</option>
+												<option value="">11:00</option>
+												<option value="">12:00</option>
+												<option value="">13:00</option>
+												<option value="">14:00</option>
+												<option value="">15:00</option>
+												<option value="" selected>16:00</option>
+												<option value="">17:00</option>
+												<option value="">18:00</option>
+											</select>
+										</div>
+
+									</div>
+									<span class="sr-only">까지</span>
+								</div>
+								<div class="foot">
+
+									<div class="radio-option">
+										<input type="radio" id="tab1-1-1-1-option-on" name="tab1-1-1-1-option" checked>
+										<label for="tab1-1-1-1-option-on">ON</label>
+										<input type="radio" id="tab1-1-1-1-option-off" name="tab1-1-1-1-option">
+										<label for="tab1-1-1-1-option-off">OFF</label>
+									</div>
+
+								</div>
+
+							</li>
+							<li class="tue">
+								<div class="tit">
+									<strong>
+										화요일
+									</strong>
+								</div>
+								<div class="con">
+									<div class="from-group">
+
+										<div class="select-type">
+											<label for="select" class="select-label"><span>10:00</span></label>
+											<select name="" id="select" class="form-control">
+												<option value="" selected>10:00</option>
+												<option value="">11:00</option>
+												<option value="">12:00</option>
+												<option value="">13:00</option>
+												<option value="">14:00</option>
+												<option value="">15:00</option>
+												<option value="">16:00</option>
+												<option value="">17:00</option>
+												<option value="">18:00</option>
+											</select>
+										</div>
+
+									</div>
+									<span class="block-box">&#126;<span class="sr-only">부터</span></span>
+									<div class="from-group">
+
+										<div class="select-type">
+											<label for="select" class="select-label"><span>16:00</span></label>
+											<select name="" id="select" class="form-control">
+												<option value="">10:00</option>
+												<option value="">11:00</option>
+												<option value="">12:00</option>
+												<option value="">13:00</option>
+												<option value="">14:00</option>
+												<option value="">15:00</option>
+												<option value="" selected>16:00</option>
+												<option value="">17:00</option>
+												<option value="">18:00</option>
+											</select>
+										</div>
+
+									</div>
+									<span class="sr-only">까지</span>
+								</div>
+								<div class="foot">
+
+									<div class="radio-option">
+										<input type="radio" id="tab1-1-1-2-option-on" name="tab1-1-1-2-option" checked>
+										<label for="tab1-1-1-2-option-on">ON</label>
+										<input type="radio" id="tab1-1-1-2-option-off" name="tab1-1-1-2-option">
+										<label for="tab1-1-1-2-option-off">OFF</label>
+									</div>
+
+								</div>
+
+							</li>
+							<li class="wed">
+								<div class="tit">
+									<strong>
+										수요일
+									</strong>
+								</div>
+								<div class="con">
+									<div class="from-group">
+
+										<div class="select-type">
+											<label for="select" class="select-label"><span>10:00</span></label>
+											<select name="" id="select" class="form-control">
+												<option value="" selected>10:00</option>
+												<option value="">11:00</option>
+												<option value="">12:00</option>
+												<option value="">13:00</option>
+												<option value="">14:00</option>
+												<option value="">15:00</option>
+												<option value="">16:00</option>
+												<option value="">17:00</option>
+												<option value="">18:00</option>
+											</select>
+										</div>
+
+									</div>
+									<span class="block-box">&#126;<span class="sr-only">부터</span></span>
+									<div class="from-group">
+
+										<div class="select-type">
+											<label for="select" class="select-label"><span>16:00</span></label>
+											<select name="" id="select" class="form-control">
+												<option value="">10:00</option>
+												<option value="">11:00</option>
+												<option value="">12:00</option>
+												<option value="">13:00</option>
+												<option value="">14:00</option>
+												<option value="">15:00</option>
+												<option value="" selected>16:00</option>
+												<option value="">17:00</option>
+												<option value="">18:00</option>
+											</select>
+										</div>
+
+									</div>
+									<span class="sr-only">까지</span>
+								</div>
+								<div class="foot">
+
+									<div class="radio-option">
+										<input type="radio" id="tab1-1-1-3-option-on" name="tab1-1-1-3-option" checked>
+										<label for="tab1-1-1-3-option-on">ON</label>
+										<input type="radio" id="tab1-1-1-3-option-off" name="tab1-1-1-3-option">
+										<label for="tab1-1-1-3-option-off">OFF</label>
+									</div>
+
+								</div>
+
+							</li>
+							<li class="thu">
+								<div class="tit">
+									<strong>
+										목요일
+									</strong>
+								</div>
+								<div class="con">
+									<div class="from-group">
+
+										<div class="select-type">
+											<label for="select" class="select-label"><span>10:00</span></label>
+											<select name="" id="select" class="form-control">
+												<option value="" selected>10:00</option>
+												<option value="">11:00</option>
+												<option value="">12:00</option>
+												<option value="">13:00</option>
+												<option value="">14:00</option>
+												<option value="">15:00</option>
+												<option value="">16:00</option>
+												<option value="">17:00</option>
+												<option value="">18:00</option>
+											</select>
+										</div>
+
+									</div>
+									<span class="block-box">&#126;<span class="sr-only">부터</span></span>
+									<div class="from-group">
+
+										<div class="select-type">
+											<label for="select" class="select-label"><span>16:00</span></label>
+											<select name="" id="select" class="form-control">
+												<option value="">10:00</option>
+												<option value="">11:00</option>
+												<option value="">12:00</option>
+												<option value="">13:00</option>
+												<option value="">14:00</option>
+												<option value="">15:00</option>
+												<option value="" selected>16:00</option>
+												<option value="">17:00</option>
+												<option value="">18:00</option>
+											</select>
+										</div>
+
+									</div>
+									<span class="sr-only">까지</span>
+								</div>
+								<div class="foot">
+
+									<div class="radio-option">
+										<input type="radio" id="tab1-1-1-4-option-on" name="tab1-1-1-4-option" checked>
+										<label for="tab1-1-1-4-option-on">ON</label>
+										<input type="radio" id="tab1-1-1-4-option-off" name="tab1-1-1-4-option">
+										<label for="tab1-1-1-4-option-off">OFF</label>
+									</div>
+
+								</div>
+
+							</li>
+							<li class="fri">
+								<div class="tit">
+									<strong>
+										금요일
+									</strong>
+								</div>
+								<div class="con">
+									<div class="from-group">
+
+										<div class="select-type">
+											<label for="select" class="select-label"><span>10:00</span></label>
+											<select name="" id="select" class="form-control">
+												<option value="" selected>10:00</option>
+												<option value="">11:00</option>
+												<option value="">12:00</option>
+												<option value="">13:00</option>
+												<option value="">14:00</option>
+												<option value="">15:00</option>
+												<option value="">16:00</option>
+												<option value="">17:00</option>
+												<option value="">18:00</option>
+											</select>
+										</div>
+
+									</div>
+									<span class="block-box">&#126;<span class="sr-only">부터</span></span>
+									<div class="from-group">
+
+										<div class="select-type">
+											<label for="select" class="select-label"><span>16:00</span></label>
+											<select name="" id="select" class="form-control">
+												<option value="">10:00</option>
+												<option value="">11:00</option>
+												<option value="">12:00</option>
+												<option value="">13:00</option>
+												<option value="">14:00</option>
+												<option value="">15:00</option>
+												<option value="" selected>16:00</option>
+												<option value="">17:00</option>
+												<option value="">18:00</option>
+											</select>
+										</div>
+
+									</div>
+									<span class="sr-only">까지</span>
+								</div>
+								<div class="foot">
+
+									<div class="radio-option">
+										<input type="radio" id="tab1-1-1-5-option-on" name="tab1-1-1-5-option" checked>
+										<label for="tab1-1-1-5-option-on">ON</label>
+										<input type="radio" id="tab1-1-1-5-option-off" name="tab1-1-1-5-option">
+										<label for="tab1-1-1-5-option-off">OFF</label>
+									</div>
+
+								</div>
+
+							</li>
+							<li class="sat">
+								<div class="tit">
+									<strong>
+										토요일
+									</strong>
+								</div>
+								<div class="con">
+									<div class="from-group">
+
+										<div class="select-type">
+											<label for="select" class="select-label"><span>10:00</span></label>
+											<select name="" id="select" class="form-control">
+												<option value="" selected>10:00</option>
+												<option value="">11:00</option>
+												<option value="">12:00</option>
+												<option value="">13:00</option>
+												<option value="">14:00</option>
+												<option value="">15:00</option>
+												<option value="">16:00</option>
+												<option value="">17:00</option>
+												<option value="">18:00</option>
+											</select>
+										</div>
+
+									</div>
+									<span class="block-box">&#126;<span class="sr-only">부터</span></span>
+									<div class="from-group">
+
+										<div class="select-type">
+											<label for="select" class="select-label"><span>16:00</span></label>
+											<select name="" id="select" class="form-control">
+												<option value="">10:00</option>
+												<option value="">11:00</option>
+												<option value="">12:00</option>
+												<option value="">13:00</option>
+												<option value="">14:00</option>
+												<option value="">15:00</option>
+												<option value="" selected>16:00</option>
+												<option value="">17:00</option>
+												<option value="">18:00</option>
+											</select>
+										</div>
+
+									</div>
+									<span class="sr-only">까지</span>
+								</div>
+								<div class="foot">
+
+									<div class="radio-option">
+										<input type="radio" id="tab1-1-1-6-option-on" name="tab1-1-1-6-option" checked>
+										<label for="tab1-1-1-6-option-on">ON</label>
+										<input type="radio" id="tab1-1-1-6-option-off" name="tab1-1-1-6-option">
+										<label for="tab1-1-1-6-option-off">OFF</label>
+									</div>
+
+								</div>
+
+							</li>
+							<li class="sun">
+								<div class="tit">
+									<strong>
+										일요일
+									</strong>
+								</div>
+								<div class="con">
+									<div class="from-group">
+
+										<div class="select-type">
+											<label for="select" class="select-label"><span>10:00</span></label>
+											<select name="" id="select" class="form-control">
+												<option value="" selected>10:00</option>
+												<option value="">11:00</option>
+												<option value="">12:00</option>
+												<option value="">13:00</option>
+												<option value="">14:00</option>
+												<option value="">15:00</option>
+												<option value="">16:00</option>
+												<option value="">17:00</option>
+												<option value="">18:00</option>
+											</select>
+										</div>
+
+									</div>
+									<span class="block-box">&#126;<span class="sr-only">부터</span></span>
+									<div class="from-group">
+
+										<div class="select-type">
+											<label for="select" class="select-label"><span>16:00</span></label>
+											<select name="" id="select" class="form-control">
+												<option value="">10:00</option>
+												<option value="">11:00</option>
+												<option value="">12:00</option>
+												<option value="">13:00</option>
+												<option value="">14:00</option>
+												<option value="">15:00</option>
+												<option value="" selected>16:00</option>
+												<option value="">17:00</option>
+												<option value="">18:00</option>
+											</select>
+										</div>
+
+									</div>
+									<span class="sr-only">까지</span>
+								</div>
+								<div class="foot">
+
+									<div class="radio-option">
+										<input type="radio" id="tab1-1-1-7-option-on" name="tab1-1-1-7-option" checked>
+										<label for="tab1-1-1-7-option-on">ON</label>
+										<input type="radio" id="tab1-1-1-7-option-off" name="tab1-1-1-7-option">
+										<label for="tab1-1-1-7-option-off">OFF</label>
+									</div>
+
+								</div>
+
+							</li>
+
+						</ul>
+
+						<div class="tab-menu depth-3">
+							<ul>
+								<li class="active">
+									<a href="#tab1-2-1">
+						<span>
+							일시정지 설정 <span class="small">* ON: 상담 운영을 긴급하게 중단, OFF: 상담 진행 됨</span>
+						</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div id="tab1-2-1" class="tab-content depth-3 active">
+
+							<div class="radio-option" style="margin-left: 30px;">
+								<input type="radio" id="tab1-2-1-option-on" name="tab1-2-1-option">
+								<label for="tab1-2-1-option-on">ON</label>
+								<input type="radio" id="tab1-2-1-option-off" name="tab1-2-1-option" checked>
+								<label for="tab1-2-1-option-off">OFF</label>
+							</div>
+
+						</div>
+					</div>
+					<div class="submit-area">
+						<button type="submit" class="submit">
+							저장
+						</button>
+					</div>
+
+
+
+
+
+				</div>
+			</form>
+
+		</div>
+
+		<div id="tab1-3" class="tab-content depth-2">
+
+
+			<form action="">
+				<div class="tab-menu depth-3">
+					<ul>
+						<li class="active">
+							<a href="#tab1-3-1">
+						<span>
+							휴무일 및 임시근무일 설정
+						</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="tab1-3-1" class="tab-content depth-3 active">
+					<div class="content-box text-center">
+						<div class="date-option">
+							<input class="datepicker" data-date-format="mm/dd/yyyy">
+						</div>
+						<span>&#126;<span class="sr-only">부터</span></span>
+						<div class="date-option">
+							<input class="datepicker" data-date-format="mm/dd/yyyy">
+						</div>
+						<span class="sr-only">까지</span>
+						<button type="submit" class="btn-type btn-search">
+							<span class="sr-only">
+								검색
+							</span>
+						</button>
+					</div>
+					<div class="search-box text-right">
+						<button type="button" class="all-btn">
+							<span>
+								전체
+							</span>
+						</button>
+						<button type="button" class="all-btn">
+							<span>
+								삭제
+							</span>
+						</button>
+						<button type="button" class="all-btn">
+							<span>
+								올해 양력 공휴일 일괄등록
+							</span>
+						</button>
+					</div>
+					<div class="result-box">
+						<ul class="list-title-area has-6item">
+							<li class="select">
+								<label for="">
+									<input type="checkbox">
+									선택
+								</label>
+							</li>
+							<li class="part">
+								<a href="#">
+									구분
+								</a>
+							</li>
+							<li class="date lineup">
+								<a href="#">
+									날짜
+								</a>
+							</li>
+							<li class="time lineup">
+								<a href="#">
+									시간
+								</a>
+							</li>
+							<li class="name lineup">
+								<a href="#">
+									명칭
+								</a>
+							</li>
+							<li class="more lineup">
+								<a href="#">
+									비고
+								</a>
+							</li>
+
+						</ul>
+						<div class="list-wrap">
+							<ul class="list-content-area has-6item">
+								<li>
+									<ul class="list">
+										<li class="select">
+											<label for=""></label>
+											<input type="checkbox">
+										</li>
+										<li class="part">
+											휴무일
+										</li>
+										<li class="date">
+											2017-03-01
+										</li>
+										<li class="time">
+
+										</li>
+										<li class="name">
+											삼일절
+										</li>
+										<li class="more">
+
+										</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="list">
+										<li class="select">
+											<label for=""></label>
+											<input type="checkbox">
+										</li>
+										<li class="part">
+											임시근무일
+										</li>
+										<li class="date">
+											2017-05-05
+										</li>
+										<li class="time">
+											10:00 ~ 14:00
+										</li>
+										<li class="name">
+											어린이날
+										</li>
+										<li class="more">
+
+										</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="list">
+										<li class="select">
+											<label for=""></label>
+											<input type="checkbox">
+										</li>
+										<li class="part">
+											휴무일
+										</li>
+										<li class="date">
+											2017-03-01
+										</li>
+										<li class="time">
+
+										</li>
+										<li class="name">
+											삼일절
+										</li>
+										<li class="more">
+
+										</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="list">
+										<li class="select">
+											<label for=""></label>
+											<input type="checkbox">
+										</li>
+										<li class="part">
+											임시근무일
+										</li>
+										<li class="date">
+											2017-05-05
+										</li>
+										<li class="time">
+											10:00 ~ 14:00
+										</li>
+										<li class="name">
+											어린이날
+										</li>
+										<li class="more">
+
+										</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="list">
+										<li class="select">
+											<label for=""></label>
+											<input type="checkbox">
+										</li>
+										<li class="part">
+											휴무일
+										</li>
+										<li class="date">
+											2017-03-01
+										</li>
+										<li class="time">
+
+										</li>
+										<li class="name">
+											삼일절
+										</li>
+										<li class="more">
+
+										</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="list">
+										<li class="select">
+											<label for=""></label>
+											<input type="checkbox">
+										</li>
+										<li class="part">
+											임시근무일
+										</li>
+										<li class="date">
+											2017-05-05
+										</li>
+										<li class="time">
+											10:00 ~ 14:00
+										</li>
+										<li class="name">
+											어린이날
+										</li>
+										<li class="more">
+
+										</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="list">
+										<li class="select">
+											<label for=""></label>
+											<input type="checkbox">
+										</li>
+										<li class="part">
+											휴무일
+										</li>
+										<li class="date">
+											2017-03-01
+										</li>
+										<li class="time">
+
+										</li>
+										<li class="name">
+											삼일절
+										</li>
+										<li class="more">
+
+										</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="list">
+										<li class="select">
+											<label for=""></label>
+											<input type="checkbox">
+										</li>
+										<li class="part">
+											임시근무일
+										</li>
+										<li class="date">
+											2017-05-05
+										</li>
+										<li class="time">
+											10:00 ~ 14:00
+										</li>
+										<li class="name">
+											어린이날
+										</li>
+										<li class="more">
+
+										</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="list">
+										<li class="select">
+											<label for=""></label>
+											<input type="checkbox">
+										</li>
+										<li class="part">
+											휴무일
+										</li>
+										<li class="date">
+											2017-03-01
+										</li>
+										<li class="time">
+
+										</li>
+										<li class="name">
+											삼일절
+										</li>
+										<li class="more">
+
+										</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="list">
+										<li class="select">
+											<label for=""></label>
+											<input type="checkbox">
+										</li>
+										<li class="part">
+											임시근무일
+										</li>
+										<li class="date">
+											2017-05-05
+										</li>
+										<li class="time">
+											10:00 ~ 14:00
+										</li>
+										<li class="name">
+											어린이날
+										</li>
+										<li class="more">
+
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div id="tab1-4" class="tab-content depth-2">
+
+
+			<form action="">
+				<div class="tab-menu depth-3">
+					<ul>
+						<li class="active">
+							<a href="#tab1-4-1">
+						<span>
+							세부 채팅 시간 설정
+						</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="tab1-4-1" class="tab-content depth-3 active">
+					<table class="table-basic">
+						<tbody>
+						<tr>
+							<th>
+								자동종료 1차 고지
+							</th>
+							<td>
+								고객 무응답 시간
+							</td>
+							<td>
+								<div class="time-count">
+									<input type="text" name="time-count" id="time-count" class="form-control" value="3">
+								</div>
+								<label for="time-count">
+									분
+								</label>
+							</td>
+							<td>
+								<div class="radio-option">
+									<input type="radio" id="tab1-4-1-1-option-on" name="tab1-4-1-1-option" checked>
+									<label for="tab1-4-1-1-option-on">ON</label>
+									<input type="radio" id="tab1-4-1-1-option-off" name="tab1-4-1-1-option">
+									<label for="tab1-4-1-1-option-off">OFF</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								자동종료
+							</th>
+							<td>
+								고객 무응답 시간
+							</td>
+							<td>
+								<div class="time-count">
+									<input type="text" name="time-count" id="time-count" class="form-control" value="5">
+								</div>
+								<label for="time-count">
+									분
+								</label>
+							</td>
+							<td>
+								<div class="radio-option">
+									<input type="radio" id="tab1-4-1-2-option-on" name="tab1-4-1-2-option" checked>
+									<label for="tab1-4-1-2-option-on">ON</label>
+									<input type="radio" id="tab1-4-1-2-option-off" name="tab1-4-1-2-option">
+									<label for="tab1-4-1-2-option-off">OFF</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								상담사 연결 지연고지
+							</th>
+							<td>
+								상담사 연결 시도 시간
+							</td>
+							<td>
+								<div class="time-count">
+									<input type="text" name="time-count" id="time-count" class="form-control" value="1">
+								</div>
+								<label for="time-count">
+									분
+								</label>
+							</td>
+							<td>
+								<div class="radio-option">
+									<input type="radio" id="tab1-4-1-3-option-on" name="tab1-4-1-3-option" checked>
+									<label for="tab1-4-1-3-option-on">ON</label>
+									<input type="radio" id="tab1-4-1-3-option-off" name="tab1-4-1-3-option">
+									<label for="tab1-4-1-3-option-off">OFF</label>
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="submit-area">
+					<button type="submit" class="submit">
+						저장
+					</button>
+				</div>
+			</form>
+		</div>
+		<div id="tab1-5" class="tab-content depth-2 active">
+
+
+			<form action="">
+				<div class="tab-menu depth-3">
+					<ul>
+						<li class="active">
+							<a href="#tab1-5-1">
+						<span>
+							개인 정보 수집
+						</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="tab1-5-1" class="tab-content depth-3 active">
+					<div class="option-area">
+
+						<div class="option-list">
+
+							<table class="table-primary form">
+								<col width="10%">
+								<col width="30%">
+								<col width="*">
+								<caption class="hidden">개인 정보 목록</caption>
+								<thead>
+								<tr>
+									<th colspan="3">개인 정보 목록</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										이름
+									</th>
+									<td>
+										<div class="from-group">
+											<input type="text" class="form-control">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										아이디
+									</th>
+									<td>
+										<div class="from-group">
+											<input type="text" class="form-control">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										생년월일
+									</th>
+									<td>
+										<div class="from-group">
+											<input type="text" class="form-control">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										전화번호
+									</th>
+									<td class="text-left">
+										<div class="from-group fll w30p">
+											<input type="text" class="form-control">
+										</div>
+										<span class="w5p bar">
+										&#45;
+									</span>
+										<div class="from-group fll w30p">
+											<input type="text" class="form-control">
+										</div>
+										<span class="w5p bar">
+										&#45;
+									</span>
+										<div class="from-group fll w30p">
+											<input type="text" class="form-control">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										이메일
+									</th>
+									<td>
+										<div class="from-group fll w47_5p">
+											<input type="text" class="form-control">
+										</div>
+										<span class="w5p bar">
+										&#64;
+									</span>
+										<div class="from-group fll w47_5p">
+											<input type="text" class="form-control">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										주소
+									</th>
+									<td>
+										<div class="from-group">
+											<input type="text" class="form-control">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										성별
+									</th>
+									<td class="text-left">
+										<div class="form-group in-table">
+											<input type="radio" name="sex" id="sex-girl" checked>
+											<label for="sex-girl">
+												여자
+											</label>
+											<input type="radio" name="sex" id="sex-man">
+											<label for="sex-man">
+												남자
+											</label>
+										</div>
+										<!--
+										<div class="radio-option">
+											<input type="radio" id="sex-option-on-woman" name="sex-option" checked>
+											<label for="sex-option-on-woman">여자</label>
+											<input type="radio" id="sex-option-off-man" name="sex-option">
+											<label for="sex-option-off-man">남자</label>
+										</div>
+										-->
+
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										개인정보 활용 동의
+									</th>
+									<td class="text-left">
+										<div class="form-check dib">
+											<input type="checkbox" id="personal">
+											<label for="personal">동의합니다</label>
+										</div>
+										<div class="search-box in-table dib flr">
+											<button type="button" class="all-btn">
+											<span>
+												상세보기
+											</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										마케팅활용 동의
+									</th>
+									<td class="text-left">
+										<div class="form-check dib">
+											<input type="checkbox" id="marketing">
+											<label for="marketing">동의합니다</label>
+										</div>
+										<div class="search-box in-table dib flr">
+											<button type="button" class="all-btn">
+											<span>
+												상세보기
+											</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+
+								</tbody>
+							</table>
+						</div>
+						<div class="option-control vam">
+							<div class="vam-con">
+								<button class="btn-type btn-add">
+									추가
+								</button>
+								<button class="btn-type btn-delete">
+									제거
+								</button>
+
+							</div>
+
+						</div>
+						<div class="option-selected">
+
+							<table class="table-primary form">
+								<col width="10%">
+								<col width="30%">
+								<col width="*">
+								<caption class="hidden">레이아웃</caption>
+								<thead>
+								<tr>
+									<th colspan="3">레이아웃</th>
+								</tr>
+								</thead>
+								<tbody>
+
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										이름
+									</th>
+									<td>
+										<div class="from-group">
+											<input type="text" class="form-control">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										아이디
+									</th>
+									<td>
+										<div class="from-group">
+											<input type="text" class="form-control">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										생년월일
+									</th>
+									<td>
+										<div class="from-group">
+											<input type="text" class="form-control">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										전화번호
+									</th>
+									<td class="text-left">
+										<div class="from-group fll w30p">
+											<input type="text" class="form-control">
+										</div>
+										<span class="w5p bar">
+										&#45;
+									</span>
+										<div class="from-group fll w30p">
+											<input type="text" class="form-control">
+										</div>
+										<span class="w5p bar">
+										&#45;
+									</span>
+										<div class="from-group fll w30p">
+											<input type="text" class="form-control">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										이메일
+									</th>
+									<td>
+										<div class="from-group fll w47_5p">
+											<input type="text" class="form-control">
+										</div>
+										<span class="w5p bar">
+										&#64;
+									</span>
+										<div class="from-group fll w47_5p">
+											<input type="text" class="form-control">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										주소
+									</th>
+									<td>
+										<div class="from-group">
+											<input type="text" class="form-control">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for=""></label>
+										<input type="checkbox">
+									</td>
+									<th>
+										성별
+									</th>
+									<td class="text-left">
+										<div class="form-group in-table">
+											<input type="radio" name="sex" id="sex-girl" checked>
+											<label for="sex-girl">
+												여자
+											</label>
+											<input type="radio" name="sex" id="sex-man">
+											<label for="sex-man">
+												남자
+											</label>
+										</div>
+										<!--
+										<div class="radio-option">
+											<input type="radio" id="sex-option-on-woman" name="sex-option" checked>
+											<label for="sex-option-on-woman">여자</label>
+											<input type="radio" id="sex-option-off-man" name="sex-option">
+											<label for="sex-option-off-man">남자</label>
+										</div>
+										-->
+
+									</td>
+								</tr>
+
+
+
+
+
+
+
+
+								</tbody>
+							</table>
+						</div>
+
+
+
+					</div>
+
+
+					<div class="submit-area">
+						<button type="submit" class="submit">
+							저장
+						</button>
+					</div>
+
+				</div>
+			</form>
+		</div>
+		<div id="tab1-6" class="tab-content depth-2">
+
+
+			<form action="">
+				<div class="tab-menu depth-3">
+					<ul>
+						<li class="active">
+							<a href="#tab1-6-1">
+						<span>
+							배분 설정
+						</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="tab1-6-1" class="tab-content depth-3 active">
+
+
+				</div>
+			</form>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
 
 	</div>
-	<div id="tab2" class="tab-content active">
+
+
+
+
+
+
+
+
+
+
+
+	<!-- tab2 -->
+	<div id="tab2" class="tab-content">
 		<div class="tab-menu depth-2">
 			<ul>
 				<li>
@@ -368,356 +1731,356 @@
 		</div>
 		<div id="tab2-1" class="tab-content depth-2">
 			<form action="">
-			<div class="tab-menu depth-3">
-				<ul>
-					<li class="active">
-						<a href="#tab2-1-1">
+				<div class="tab-menu depth-3">
+					<ul>
+						<li class="active">
+							<a href="#tab2-1-1">
 						<span>
 							인입 유형 사용 유/무
 						</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div id="tab2-1-1" class="tab-content depth-3 active">
-				<div class="classify-option">
-					<input type="radio" id="option-on" name="classify-option">
-					<label for="option-on">ON</label>
-					<input type="radio" id="option-off" name="classify-option" checked>
-					<label for="option-off">OFF</label>
+							</a>
+						</li>
+					</ul>
 				</div>
-				<div class="classify-area">
-					<div class="classify col-xs-4">
-						<div class="tit">
+
+				<div id="tab2-1-1" class="tab-content depth-3 active">
+					<div class="radio-option">
+						<input type="radio" id="option-on" name="classify-option">
+						<label for="option-on">ON</label>
+						<input type="radio" id="option-off" name="classify-option" checked>
+						<label for="option-off">OFF</label>
+					</div>
+					<div class="classify-area">
+						<div class="classify col-xs-4">
+							<div class="tit">
 					<span>
 						1차 유형(대분류)
 					</span>
-						</div>
-						<div class="con">
-							<ul class="list-classify">
-								<li>
-									<a href="#">
+							</div>
+							<div class="con">
+								<ul class="list-classify">
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트1
 								</span>
-									</a>
-								</li>
-								<li class="active">
-									<a href="#">
+										</a>
+									</li>
+									<li class="active">
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트3
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트4
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트5
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트6
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트7
 								</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="foot">
-							<div class="add col-xs-6">
-								<a href="#">
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="foot">
+								<div class="add col-xs-6">
+									<a href="#">
 							<span>
 								추가
 							</span>
-								</a>
-							</div>
-							<div class="delete col-xs-6">
-								<a href="#">
+									</a>
+								</div>
+								<div class="delete col-xs-6">
+									<a href="#">
 							<span>
 								삭제
 							</span>
-								</a>
-							</div>
-							<div class="check col-xs-12 bdln">
-								<a href="#">
-								<input type="checkbox" id="adviser-1">
-								<label for="adviser-1">
+									</a>
+								</div>
+								<div class="check col-xs-12 bdln">
+									<a href="#">
+										<input type="checkbox" id="adviser-1">
+										<label for="adviser-1">
 								<span>
 									상담원 연결
 								</span>
-								</label>
-								</a>
+										</label>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="classify col-xs-4">
-						<div class="tit">
+						<div class="classify col-xs-4">
+							<div class="tit">
 					<span>
 						2차 유형(중분류)
 					</span>
-						</div>
-						<div class="con">
-							<ul class="list-classify">
-								<li>
-									<a href="#">
+							</div>
+							<div class="con">
+								<ul class="list-classify">
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-										<span>
+											<span>
 									중분류 리스트1
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-										<span>
+											<span>
 									중분류 리스트2
 								</span>
-									</a>
-								</li>
-								<li class="active">
-									<a href="#">
+										</a>
+									</li>
+									<li class="active">
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-										<span>
+											<span>
 									중분류 리스트3
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-										<span>
+											<span>
 									중분류 리스트4
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-										<span>
+											<span>
 									중분류 리스트5
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-										<span>
+											<span>
 									중분류 리스트6
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-										<span>
+											<span>
 									중분류 리스트7
 								</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="foot">
-							<div class="add col-xs-6">
-								<a href="#">
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="foot">
+								<div class="add col-xs-6">
+									<a href="#">
 							<span>
 								추가
 							</span>
-								</a>
-							</div>
-							<div class="delete col-xs-6">
-								<a href="#">
+									</a>
+								</div>
+								<div class="delete col-xs-6">
+									<a href="#">
 							<span>
 								삭제
 							</span>
-								</a>
-							</div>
-							<div class="check col-xs-12 bdln">
-								<a href="#">
-								<input type="checkbox" id="adviser-2">
-								<label for="adviser-2">
+									</a>
+								</div>
+								<div class="check col-xs-12 bdln">
+									<a href="#">
+										<input type="checkbox" id="adviser-2">
+										<label for="adviser-2">
 								<span>
 									상담원 연결
 								</span>
-								</label>
-								</a>
+										</label>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="classify col-xs-4">
-						<div class="tit">
+						<div class="classify col-xs-4">
+							<div class="tit">
 					<span>
 						3차 유형(소분류)
 					</span>
-						</div>
-						<div class="con">
-							<ul class="list-classify">
-								<li>
-									<a href="#">
+							</div>
+							<div class="con">
+								<ul class="list-classify">
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-										<span>
+											<span>
 									중분류 리스트3
 								</span>
-										<span>
+											<span>
 									소분류 리스트1
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-										<span>
+											<span>
 									중분류 리스트3
 								</span>
-										<span>
+											<span>
 									소분류 리스트2
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-										<span>
+											<span>
 									중분류 리스트3
 								</span>
-										<span>
+											<span>
 									소분류 리스트3
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-										<span>
+											<span>
 									중분류 리스트3
 								</span>
-										<span>
+											<span>
 									소분류 리스트4
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-										<span>
+											<span>
 									중분류 리스트3
 								</span>
-										<span>
+											<span>
 									소분류 리스트5
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-										<span>
+											<span>
 									중분류 리스트3
 								</span>
-										<span>
+											<span>
 									소분류 리스트6
 								</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 								<span>
 									대분류 리스트2
 								</span>
-										<span>
+											<span>
 									중분류 리스트3
 								</span>
-										<span>
+											<span>
 									소분류 리스트7
 								</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="foot">
-							<div class="add col-xs-6">
-								<a href="#">
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="foot">
+								<div class="add col-xs-6">
+									<a href="#">
 							<span>
 								추가
 							</span>
-								</a>
-							</div>
-							<div class="delete col-xs-6">
-								<a href="#">
+									</a>
+								</div>
+								<div class="delete col-xs-6">
+									<a href="#">
 							<span>
 								삭제
 							</span>
-								</a>
-							</div>
-							<div class="check col-xs-12 bdln">
-								<a href="#">
-								<input type="checkbox" id="adviser-3">
-								<label for="adviser-3">
+									</a>
+								</div>
+								<div class="check col-xs-12 bdln">
+									<a href="#">
+										<input type="checkbox" id="adviser-3">
+										<label for="adviser-3">
 								<span>
 									상담원 연결
 								</span>
-								</label>
-								</a>
+										</label>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
+
 				</div>
 
-			</div>
-
-			<div class="submit-area">
-				<button type="submit" class="submit">
-					확인
-				</button>
-			</div>
+				<div class="submit-area">
+					<button type="submit" class="submit">
+						확인
+					</button>
+				</div>
 			</form>
 		</div>
 		<div id="tab2-2" class="tab-content depth-2 active">
@@ -832,37 +2195,37 @@
 							</li>
 							<li class="use">
 								<a href="">
-								사용여부
+									사용여부
 								</a>
 							</li>
 							<li class="large">
 								<a href="">
-								인입유형 대
+									인입유형 대
 								</a>
 							</li>
 							<li class="middle">
 								<a href="">
-								인입유형 중
+									인입유형 중
 								</a>
 							</li>
 							<li class="small">
 								<a href="">
-								인입유형 소
+									인입유형 소
 								</a>
 							</li>
 							<li class="relevant">
 								<a href="">
-								관련상품
+									관련상품
 								</a>
 							</li>
 							<li class="last-update">
 								<a href="">
-								최종 수정자
+									최종 수정자
 								</a>
 							</li>
 							<li class="last-update-time">
 								<a href="">
-								최종 수정일시
+									최종 수정일시
 								</a>
 							</li>
 						</ul>
@@ -1099,7 +2462,7 @@
 									키워드
 								</th>
 								<td class="text-left">
-
+									Lorem ipsum dolor sit amet.
 								</td>
 							</tr>
 							<tr>
@@ -1107,7 +2470,10 @@
 									관련상품
 								</th>
 								<td class="text-left">
-
+									Lorem ipsum dolor sit amet.
+									<a href="" class="link-type">
+										Lorem ipsum dolor sit amet.
+									</a>
 								</td>
 							</tr>
 							<tr>
@@ -1567,17 +2933,17 @@
 						</table>
 					</div>
 
-				</div>
-				<div class="submit-area">
-					<button type="submit" class="submit">
-						저장
-					</button>
-					<button type="button" class="edit">
-						편집
-					</button>
-					<button type="button" class="delete">
-						삭제
-					</button>
+					<div class="submit-area">
+						<button type="submit" class="submit">
+							저장
+						</button>
+						<button type="button" class="edit">
+							편집
+						</button>
+						<button type="button" class="delete">
+							삭제
+						</button>
+					</div>
 				</div>
 
 
