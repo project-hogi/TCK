@@ -125,13 +125,9 @@
 		</div>
 	</div>
 
-
-
-
 <?php require "part/footer-sub.php"; ?>
 <?php require "part/footer.php"; ?>
 <?php require "part/app-footer.php"; ?>
-
 
 <!-- 팝업 -->
 <div id="new-project-popup" role="dialog" class="modal fade">
@@ -213,8 +209,6 @@
 						</tr>
 						</tbody>
 					</table>
-
-
 					<div class="submit-area">
 						<button type="submit" class="submit">
 							확인

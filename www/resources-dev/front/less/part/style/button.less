@@ -2,6 +2,7 @@
 .submit-area{
 	margin-top: 13px;
 	text-align: center;
+	
 	button,
 	a{
 		/*버튼스타일 초기화*/
@@ -9,9 +10,6 @@
 		background: none;
 		box-shadow: none;
 		margin-left: 5px;
-		&:first-child{
-			margin-left: 0;
-		}
 		
 		/* submit-design */
 		display: inline-block;
@@ -24,13 +22,18 @@
 		background-color: #e26042;
 		color: #fff;
 		
+		&:first-child{
+			margin-left: 0;
+		}
 	}
+	
 	.edit{
 		border-color: #cbcbcb;
 		color: #636363;
 		background-color: #eeeeee;
 		background-image: url(../images/part/section/form/reset.png);
 	}
+	
 	.delete{
 		border-color: #cbcbcb;
 		color: #636363;
@@ -47,6 +50,7 @@
 	display: block;
 	height: 40px;
 	text-align: center;
+	
 	&:after{
 		clear: both;
 		display: block;
@@ -66,15 +70,18 @@
 		background-color: linear-gradient(to bottom,  #f9f9f9 0%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
 		margin-left: 3px;
+		
 		&:first-child{
 			margin: 0;
 		}
+		
 		&.up{
 			width: 40px;
 			background-image: url(../images/part/section/form/up.png);
 			background-position: 50% 50%;
 			background-repeat: no-repeat;
 		}
+		
 		&.down{
 			width: 40px;
 			background-image: url(../images/part/section/form/down.png);
@@ -93,9 +100,7 @@
 		background: none;
 		box-shadow: none;
 		margin-left: 5px;
-		&:first-child{
-			margin-left: 0;
-		}
+		
 		display: inline-block;
 		border: 1px solid #ccc;
 		border-radius: 3px;
@@ -105,7 +110,9 @@
 		color: #444;
 		background-color: #fff;
 		
-		
+		&:first-child{
+			margin-left: 0;
+		}
 	}
 }
 
@@ -126,6 +133,7 @@
 	&.btn-search{
 		background-image: url(../images/part/section/form/search-icon.png);
 	}
+	
 	&.btn-add,
 	&.btn-delete{
 		position: relative;
@@ -152,12 +160,13 @@
 			background-repeat: no-repeat;
 		}
 	}
+	
 	&.btn-add{
 		padding-right: 25px;
+		
 		&:after{
 			right: 20px;
 			background-image: url(../images/part/section/form/btn-add.png);
-			
 		}
 	}
 	&.btn-delete{
@@ -166,7 +175,6 @@
 		&:after{
 			left: 20px;
 			background-image: url(../images/part/section/form/btn-delete.png);
-			
 		}
 	}
 }

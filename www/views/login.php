@@ -7,7 +7,7 @@
 
 			<div class="login-box">
 				<h1 class="logo">
-					<a href="#">
+					<a href="/">
 						<span class="sr-only">
 							TCK 비즈 메시지센터
 							<span class="small">
@@ -16,7 +16,7 @@
 						</span>
 					</a>
 				</h1>
-				<form action="/view/notice.php" method="post">
+				<form action="" method="post">
 					<div class="form-group id">
 						<label for="id" class="sr-only">아이디</label>
 						<input type="text" name="id" id="id" class="form-control" placeholder="아이디">

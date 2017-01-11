@@ -16,6 +16,7 @@
             });
         });
 
+
         $('.search-box').each(function(){
             var $searchBox = $(this);
 
@@ -39,6 +40,16 @@
 
         $('.datepicker').datepicker();
 
+        /*
+        * ================================================
+        * 선택된 값을 .val(이곳)에 넣으면 값이 변경됩니다.
+        * ================================================
+        * $('.search-box').find('select').val('cd');
+        *
+        * */
+
+        /* 기본 선택된 값으로 label값을 change 해준다 */
+        $('.search-box').find('select').trigger('change');
 
     });
 

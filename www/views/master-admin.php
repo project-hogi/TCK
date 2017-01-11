@@ -5,7 +5,6 @@
 <?php require "part/header.php"; ?>
 <?php require "part/header-sub.php"; ?>
 
-
 	<h3 class="content-title">
 		조직관리
 	</h3>
@@ -16,7 +15,6 @@
 				<script type="text/javascript">
 					<!--
 					d = new dTree('d');
-
 					d.add(0,-1,'PF V2','#link');
 					d.add(1,0,'회사 1','#link');
 					d.add(2,1,'프로젝트 1','#link');
@@ -29,9 +27,7 @@
 					d.add(9,0,'프로젝트 2','#link');
 					d.add(10,9,'프로젝트 2','#link');
 					d.add(11,9,'프로젝트 2','#link');
-
 					document.write(d);
-
 					//-->
 				</script>
 			</div>
@@ -125,7 +121,6 @@
 							계정상태
 						</a>
 					</li>
-
 				</ul>
 				<div class="list-wrap">
 					<ul class="list-content-area has-7item">
@@ -506,7 +501,6 @@
 							계정상태
 						</a>
 					</li>
-
 				</ul>
 				<div class="list-wrap">
 					<ul class="list-content-area has-7item">
@@ -838,17 +832,9 @@
 		</button>
 	</div>
 
-
-
-
-
-
-
 <?php require "part/footer-sub.php"; ?>
 <?php require "part/footer.php"; ?>
 <?php require "part/app-footer.php"; ?>
-
-
 
 <!-- 프로젝트 정보입력 팝업 -->
 <div id="inputpopup" role="dialog" class="modal fade input-popup">

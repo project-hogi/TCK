@@ -138,8 +138,31 @@
 
 		});
 
+		$('.result-box').each(function(){
+			var $resultBox = $(this);
+			var $tablePrimary = $('.table-primary', $resultBox);
+			var $tablePrimaryTr = $('tr', $tablePrimary);
+			var $tablePrimaryTT = $('>*', $tablePrimaryTr);
+			$tablePrimaryTr.on('click',function(){
+				var $thisTr = $(this);
+				$thisTr.siblings('tr').removeClass('active');
+				$thisTr.addClass('active');
 
+			});
 
+		});
+
+		$('.list-select').each(function(){
+			var $listSelect = $(this);
+			var $listSelectList = $('.list', $listSelect);
+			var $li = $('li', $listSelectList);
+			$li.on('click', '>a', function(e){
+				e.preventDefault();
+				var $thisA = $(this);
+				$thisA.parent('li').siblings('li').find('a').removeClass('active');
+				$thisA.addClass('active');
+			});
+		});
 	});
 
 })(jQuery);

@@ -1,6 +1,4 @@
-
 </div>
 <!-- /#content -->
-
 </div>
 <!-- /.section -->

@@ -66,6 +66,7 @@ $config["imageDir"] = $config["resourcesDir"]  . "/images";
 <!--[if lt IE 9]><script src="<?php echo $config["resourcesDir"]; ?>/js/vendor/jquery-1.12.2.min.js"></script><![endif]-->
 <!--[if gte IE 9]><!--><script src="<?php echo $config["resourcesDir"]; ?>/js/vendor/jquery.min.js"></script><![endif]-->
 <script src="<?php echo $config["resourcesDir"]; ?>/js/script.js"></script>
+<script src="<?php echo $config["resourcesDir"]; ?>/js/part/datepicker.js"></script>
 <script src="<?php echo $config["resourcesDir"]; ?>/js/part/dtree.js"></script>
 <script src="<?php echo $config["resourcesDir"]; ?>/js/part/app.js"></script>
 <script src="<?php echo $config["resourcesDir"]; ?>/js/part/page.js"></script>

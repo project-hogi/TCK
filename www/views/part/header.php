@@ -1,5 +1,4 @@
 <div id="wrap">
-
 	<div id="header-left">
 		<h1 class="logo">
 			<a href="/">
@@ -11,41 +10,39 @@
 		</h1>
 		<div class="lnb">
 			<ul class="lnb-list">
-				<li class="eq-0">
+				<li class="eq-0 <?php if(getDepthId($pagePath, 0) == "setting"){ ?>active<?php } ?>">
 					<a href="#">
 						<span>운영설정</span>
 					</a>
 					<ul>
-						<li>
-							<a href="notice.php">
-									<span>
-										공지사항
-									</span>
-							</a>
-						</li>
-						<li>
-							<a href="setting.php">
+						<li <?php if(getDepthId($pagePath, 0) == "setting"){ ?>
+							<?php if(getDepthId($pagePath, 1) == "1"){ ?>
+								class="active"
+							<?php } ?>
+						<?php } ?>>
+							<a href="setting-1.php">
 									<span>
 										상담 운영 설정
 									</span>
 							</a>
 						</li>
-						<li>
-							<a href="setting.php">
+						<li <?php if(getDepthId($pagePath, 0) == "setting"){ ?>
+							<?php if(getDepthId($pagePath, 1) == "2"){ ?>
+								class="active"
+							<?php } ?>
+						<?php } ?>>
+							<a href="setting-2.php">
 									<span>
 										챗봇 설정
 									</span>
 							</a>
 						</li>
-						<li>
-							<a href="setting.php">
-									<span>
-										차단 설정
-									</span>
-							</a>
-						</li>
-						<li>
-							<a href="setting.php">
+						<li <?php if(getDepthId($pagePath, 0) == "setting"){ ?>
+							<?php if(getDepthId($pagePath, 1) == "3"){ ?>
+								class="active"
+							<?php } ?>
+						<?php } ?>>
+							<a href="setting-3.php">
 									<span>
 										과금 보기
 									</span>
@@ -53,25 +50,33 @@
 						</li>
 					</ul>
 				</li>
-				<li class="eq-1 active">
+				<li class="eq-1 <?php if(getDepthId($pagePath, 0) == "bill"){ ?>active<?php } ?>">
 					<a href="bill.php">
 						<span>과금내역</span>
 					</a>
 				</li>
-				<li class="eq-2">
-					<a href="stats.php">
+				<li class="eq-2 <?php if(getDepthId($pagePath, 0) == "stats"){ ?>active<?php }else if(getDepthId($pagePath, 0) == "dashboard"){ ?>active<?php } ?>">
+					<a href="stats-stats.php">
 						<span>통계지표</span>
 					</a>
 					<ul>
-						<li>
-							<a href="stats.php">
+						<li <?php if(getDepthId($pagePath, 0) == "stats"){ ?>
+							<?php if(getDepthId($pagePath, 1) == "stats"){ ?>
+								class="active"
+							<?php } ?>
+						<?php } ?>>
+							<a href="stats-stats.php">
 									<span>
 										통계
 									</span>
 							</a>
 						</li>
-						<li>
-							<a href="stats.php">
+						<li <?php if(getDepthId($pagePath, 0) == "stats"){ ?>
+								<?php if(getDepthId($pagePath, 1) == "dashboard"){ ?>
+									class="active"
+								<?php } ?>
+						<?php } ?>>
+							<a href="stats-dashboard.php">
 									<span>
 										대시보드
 									</span>
@@ -79,20 +84,28 @@
 						</li>
 					</ul>
 				</li>
-				<li class="eq-3">
-					<a href="rawdate.php">
+				<li class="eq-3 <?php if(getDepthId($pagePath, 0) == "rawdate"){ ?>active<?php } ?>">
+					<a href="rawdate-1.php">
 						<span>Rawdate</span>
 					</a>
 					<ul>
-						<li>
-							<a href="rawdate.php">
+						<li <?php if(getDepthId($pagePath, 0) == "rawdate"){ ?>
+							<?php if(getDepthId($pagePath, 1) == "1"){ ?>
+								class="active"
+							<?php } ?>
+						<?php } ?>>
+							<a href="rawdate-1.php">
 								<span>
 									데이터 보관
 								</span>
 							</a>
 						</li>
-						<li>
-							<a href="rawdate.php">
+						<li <?php if(getDepthId($pagePath, 0) == "rawdate"){ ?>
+							<?php if(getDepthId($pagePath, 1) == "2"){ ?>
+								class="active"
+							<?php } ?>
+						<?php } ?>>
+							<a href="rawdate-2.php">
 								<span>
 									rawdata
 								</span>
@@ -100,19 +113,27 @@
 						</li>
 					</ul>
 				</li>
-				<li class="eq-4">
+				<li class="eq-4 <?php if(getDepthId($pagePath, 0) == "master"){ ?>active<?php } ?>">
 					<a href="master.php">
 						<span>마스터 메뉴</span>
 					</a>
 					<ul>
-						<li>
+						<li <?php if(getDepthId($pagePath, 0) == "master"){ ?>
+							<?php if(getDepthId($pagePath, 1) == "admin"){ ?>
+								class="active"
+							<?php } ?>
+						<?php } ?>>
 							<a href="master-admin.php">
 									<span>
 										조직 및 계정 관리
 									</span>
 							</a>
 						</li>
-						<li>
+						<li <?php if(getDepthId($pagePath, 0) == "master"){ ?>
+							<?php if(getDepthId($pagePath, 1) == "notice"){ ?>
+								class="active"
+							<?php } ?>
+						<?php } ?>>
 							<a href="master-notice.php">
 									<span>
 										공지사항
@@ -164,7 +185,7 @@
 			</ul>
 		</div>
 		<div class="member">
-			<a href="#">
+			<a href="login.php">
 				<span class="sr-only">member</span>
 			</a>
 		</div>

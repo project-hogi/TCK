@@ -92,24 +92,25 @@
 						</li>
 					</ul>
 				</li>
-				<li class="eq-1 active">
+				<li class="eq-1 ">
 					<a href="bill.html">
 						<span>과금내역</span>
 					</a>
 				</li>
-				<li class="eq-2 ">
+				<li class="eq-2 active">
 					<a href="stats-stats.html">
 						<span>통계지표</span>
 					</a>
 					<ul>
-						<li >
+						<li 															class="active"
+													>
 							<a href="stats-stats.html">
 									<span>
 										통계
 									</span>
 							</a>
 						</li>
-						<li >
+						<li 														>
 							<a href="stats-dashboard.html">
 									<span>
 										대시보드
@@ -330,51 +331,97 @@
 					<input class="datepicker" data-date-format="mm/dd/yyyy">
 				</div>
 				<span class="sr-only">까지</span>
+				<div class="select-type main">
+					<label for="select" class="select-label"><span>유형</span></label>
+					<select name="" id="select" class="form-control">
+						<option value="">일자별</option>
+						<option value="">시간대별</option>
+						<option value="">인입유형별</option>
+					</select>
+				</div>
+				<div class="select-type main">
+					<label for="select" class="select-label"><span>단위</span></label>
+					<select name="" id="select" class="form-control">
+						<option value="">5분</option>
+						<option value="">10분</option>
+						<option value="">15분</option>
+						<option value="">30분</option>
+						<option value="">60분</option>
+					</select>
+				</div>
 				<button type="submit" class="btn-type btn-search">
 							<span class="sr-only">
 								검색
 							</span>
 				</button>
-				<div class="count-area">
-					<div class="month">
-						<strong>
-							11
-						</strong>
-						월
-					</div>
-					<div class="won">
-						총 금액
-						<strong>
-							1,5000,000
-						</strong>
-						원
-					</div>
-				</div>
 			</div>
 			<div class="bill-board">
 				<div class="bill-title">
 					<strong>
-						과금내역
+						인입유형별 통계
 					</strong>
 				</div>
-				<div class="bill-con">
-					<div class="text-right">
-						<button type="submit" class="btn-type">
-							<span>
+				<div class="summary">
+					<table class="table-form">
+						<colgroup>
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+						</colgroup>
+						<tbody>
+						<tr>
+							<th>
+								유형
+							</th>
+							<td>
+								인입유형별 통계
+							</td>
+							<th>
+								단위
+							</th>
+							<td>
+								60분
+							</td>
+						</tr>
+						<tr>
+							<th>
+								기간
+							</th>
+							<td>
+								2016.09.22 ~ 2016.09.22
+							</td>
+							<th>
 								다운로드
-							</span>
-						</button>
-					</div>
+							</th>
+							<td>
+								<a href="#" class="download">
+										<span class="sr-only">
+											다운로드
+										</span>
+								</a>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="bill-con">
 					<table class="table-bill">
 						<colgroup>
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
 						</colgroup>
 						<thead>
 						<tr>
@@ -385,22 +432,40 @@
 								프로젝트
 							</th>
 							<th>
-								연도
+								일자
 							</th>
 							<th>
-								월
+								시간
 							</th>
 							<th>
-								일
+								총 인입건
 							</th>
 							<th>
-								비과금 건 수
+								상담사 완료건
 							</th>
 							<th>
-								과금 건 수
+								상담사 연결 포기건
 							</th>
 							<th>
-								과금 비용
+								자동종료건
+							</th>
+							<th>
+								상담사 응대율
+							</th>
+							<th>
+								서비스레벨
+							</th>
+							<th>
+								CPH
+							</th>
+							<th>
+								AHT
+							</th>
+							<th>
+								고객무응답 시간
+							</th>
+							<th>
+								동시 채팅
 							</th>
 						</tr>
 						</thead>
@@ -413,9 +478,15 @@
 							<td></td>
 							<td></td>
 							<td></td>
-							<td>50,000,000</td>
-							<td>1,000,000</td>
-							<td>100,000,000</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -425,9 +496,15 @@
 							<td></td>
 							<td></td>
 							<td></td>
-							<td>4,166,666</td>
-							<td>83,333</td>
-							<td>8,333,333</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 
 						</tfoot>
@@ -435,102 +512,114 @@
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>1</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>2</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>3</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>4</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>5</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>6</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>7</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>8</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>9</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>10</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						</tbody>
 					</table>

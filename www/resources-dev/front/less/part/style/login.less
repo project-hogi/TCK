@@ -3,10 +3,12 @@ div#login-wrap{
 	height: 100%;
 	background: url(../images/part/login/bg.png) 0 0 no-repeat;
 	background-size: cover;
+	
 	.container{
 		height: 100%;
 		background-color: rgba(53,57,66,0.9);
 		text-align: center;
+		
 		&:before{
 			display: inline-block;
 			content: '';
@@ -15,24 +17,29 @@ div#login-wrap{
 			vertical-align: middle;
 		}
 	}
+	
 	.login-box{
 		width: 400px;
 		display: inline-block;
 		vertical-align: middle;
 		padding-bottom: 60px;
+		
 		.logo{
 			display: block;
 			height: 75px;
 			margin-bottom: 60px;
+			
 			a{
 				display: block;
 				height: 100%;
 				background: url(../images/part/logo/logo-login.png) 50% 50% no-repeat;
 			}
 		}
+		
 		form{
 			position: relative;
 		}
+		
 		.form-group{
 			width: 310px;
 			margin-bottom: 10px;
@@ -44,6 +51,7 @@ div#login-wrap{
 				background-repeat: no-repeat;
 				background-position: 93% 50%;
 			}
+			
 			&.id{
 				.form-control{
 					&::-webkit-input-placeholder,
@@ -57,6 +65,7 @@ div#login-wrap{
 					background-image: url(../images/part/login/id.png);
 				}
 			}
+			
 			&.password{
 				.form-control{
 					&::-webkit-input-placeholder,
@@ -70,24 +79,30 @@ div#login-wrap{
 					color: #fff;
 				}
 			}
+			
 			&.checkbox{
 				display: block;
 				width: 100%;
+				
 				&:after{
 					clear: both;
 					display: block;
 					content: '';
 				}
+				
 				.check-style{
 					display: none;
+					
 					&~label{
 						font-size: 16px;
 						color: #cdcdcd;
+						
 						span{
 							position: absolute;
 							left: 30px;
 							top: 0;
 						}
+						
 						&:before{
 							position: absolute;
 							left: 0;
@@ -100,12 +115,14 @@ div#login-wrap{
 							background: url(../images/part/login/checkbox.png) 0 0 no-repeat;
 						}
 					}
+					
 					&:checked~label:before{
 						background-image: url(../images/part/login/checkbox-checked.png);
 					}
 				}
 			}
 		}
+		
 		.submit-box{
 			position: absolute;
 			right: 0;
@@ -146,6 +163,7 @@ div#login-wrap{
 	}
 	.contact-us{
 		left: 47px;
+		
 		a{
 			display: inline-block;
 			height: 100%;
@@ -156,12 +174,11 @@ div#login-wrap{
 			color: #969696;
 		}
 	}
+	
 	.copyright{
 		right: 47px;
 		color: #707070;
 	}
-	
-	
 }
 
 

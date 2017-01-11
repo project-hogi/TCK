@@ -92,7 +92,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="eq-1 active">
+				<li class="eq-1 ">
 					<a href="bill.html">
 						<span>과금내역</span>
 					</a>
@@ -118,19 +118,20 @@
 						</li>
 					</ul>
 				</li>
-				<li class="eq-3 ">
+				<li class="eq-3 active">
 					<a href="rawdate-1.html">
 						<span>Rawdate</span>
 					</a>
 					<ul>
-						<li >
+						<li 															class="active"
+													>
 							<a href="rawdate-1.html">
 								<span>
 									데이터 보관
 								</span>
 							</a>
 						</li>
-						<li >
+						<li 													>
 							<a href="rawdate-2.html">
 								<span>
 									rawdata
@@ -228,17 +229,20 @@
 					PJ
 				</span>
 			</button>
-			<div class="text-box ml10">
+			<div class="text-box ml10 w210">
 				<label for="" class="sr-only">회사명 검색창</label>
 				<input type="text" class="form-control" placeholder="회사명">
 			</div>
 			<div class="select-box">
 				<label for="select" class="select-label"><span>선택하세요</span></label>
-				<select name="" id="select" class="form-control">
-					<option value="">옵션1</option>
-					<option value="">옵션2</option>
-					<option value="">옵션3</option>
+				<select name="" id="select-test" class="form-control">
+					<option value="ab">프로젝트명</option>
+					<option value="cd">발신프로필</option>
 				</select>
+			</div>
+			<div class="text-box ml10 w210">
+				<label for="" class="sr-only">검색창</label>
+				<input type="text" class="form-control" placeholder="검색창">
 			</div>
 			<button type="submit" class="submit-btn">
 				<span class="sr-only">
@@ -335,26 +339,11 @@
 								검색
 							</span>
 				</button>
-				<div class="count-area">
-					<div class="month">
-						<strong>
-							11
-						</strong>
-						월
-					</div>
-					<div class="won">
-						총 금액
-						<strong>
-							1,5000,000
-						</strong>
-						원
-					</div>
-				</div>
 			</div>
 			<div class="bill-board">
-				<div class="bill-title">
+				<div class="bill-title rawdata">
 					<strong>
-						과금내역
+						회사명_프로젝트명_2015030120150331
 					</strong>
 				</div>
 				<div class="bill-con">
@@ -367,14 +356,20 @@
 					</div>
 					<table class="table-bill">
 						<colgroup>
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
 						</colgroup>
 						<thead>
 						<tr>
@@ -385,152 +380,107 @@
 								프로젝트
 							</th>
 							<th>
-								연도
+								발신프로필
 							</th>
 							<th>
-								월
+								발신프로필 UUID
 							</th>
 							<th>
-								일
+								세션 ID
 							</th>
 							<th>
-								비과금 건 수
+								세션오픈
 							</th>
 							<th>
-								과금 건 수
+								과금 시간
 							</th>
 							<th>
-								과금 비용
+								세션 클로즈
+							</th>
+							<th>
+								USER KEY
+							</th>
+							<th>
+								인입유형 대
+							</th>
+							<th>
+								인입유형 중
+							</th>
+							<th>
+								인입유형 소
+							</th>
+							<th>
+								상담사 연결 여부
+							</th>
+							<th>
+								과금 여부
 							</th>
 						</tr>
 						</thead>
-						<tfoot>
-						<tr>
-							<td>
-								합계
-							</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td>50,000,000</td>
-							<td>1,000,000</td>
-							<td>100,000,000</td>
-						</tr>
-						<tr>
-							<td>
-								평균
-							</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td>4,166,666</td>
-							<td>83,333</td>
-							<td>8,333,333</td>
-						</tr>
-
-						</tfoot>
 						<tbody>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>1</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>2</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>3</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>4</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>5</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>6</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>7</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>8</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>9</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>10</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
 						</tr>
 						</tbody>
 					</table>

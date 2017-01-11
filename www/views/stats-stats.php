@@ -29,7 +29,6 @@
 			<div class="select-box">
 				<label for="select" class="select-label"><span>선택하세요</span></label>
 				<select name="" id="select" class="form-control">
-					<option value="">선택하세요</option>
 					<option value="">옵션1</option>
 					<option value="">옵션2</option>
 					<option value="">옵션3</option>
@@ -43,7 +42,7 @@
 		</div>
 	</form>
 	<div class="result-box">
-		<table class="table-primary table-strip">
+		<table class="table-primary table-select">
 			<thead>
 			<tr>
 				<th>번호</th>
@@ -202,14 +201,20 @@
 				<div class="bill-con">
 					<table class="table-bill">
 						<colgroup>
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
+							<col width="7.14%">
 						</colgroup>
 						<thead>
 						<tr>
@@ -220,22 +225,40 @@
 								프로젝트
 							</th>
 							<th>
-								연도
+								일자
 							</th>
 							<th>
-								월
+								시간
 							</th>
 							<th>
-								일
+								총 인입건
 							</th>
 							<th>
-								비과금 건 수
+								상담사 완료건
 							</th>
 							<th>
-								과금 건 수
+								상담사 연결 포기건
 							</th>
 							<th>
-								과금 비용
+								자동종료건
+							</th>
+							<th>
+								상담사 응대율
+							</th>
+							<th>
+								서비스레벨
+							</th>
+							<th>
+								CPH
+							</th>
+							<th>
+								AHT
+							</th>
+							<th>
+								고객무응답 시간
+							</th>
+							<th>
+								동시 채팅
 							</th>
 						</tr>
 						</thead>
@@ -248,9 +271,15 @@
 							<td></td>
 							<td></td>
 							<td></td>
-							<td>50,000,000</td>
-							<td>1,000,000</td>
-							<td>100,000,000</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
@@ -260,9 +289,15 @@
 							<td></td>
 							<td></td>
 							<td></td>
-							<td>4,166,666</td>
-							<td>83,333</td>
-							<td>8,333,333</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 
 						</tfoot>
@@ -270,102 +305,114 @@
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>1</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>2</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>3</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>4</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>5</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>6</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>7</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>8</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>9</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
 							<td></td>
 							<td></td>
-							<td>2015</td>
-							<td>10</td>
 							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 						</tbody>
 					</table>
@@ -373,23 +420,6 @@
 			</div>
 		</form>
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <?php require "part/footer-sub.php"; ?>
 <?php require "part/footer.php"; ?>

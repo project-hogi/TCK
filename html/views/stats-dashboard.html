@@ -92,24 +92,25 @@
 						</li>
 					</ul>
 				</li>
-				<li class="eq-1 active">
+				<li class="eq-1 ">
 					<a href="bill.html">
 						<span>과금내역</span>
 					</a>
 				</li>
-				<li class="eq-2 ">
+				<li class="eq-2 active">
 					<a href="stats-stats.html">
 						<span>통계지표</span>
 					</a>
 					<ul>
-						<li >
+						<li 													>
 							<a href="stats-stats.html">
 									<span>
 										통계
 									</span>
 							</a>
 						</li>
-						<li >
+						<li 																	class="active"
+														>
 							<a href="stats-dashboard.html">
 									<span>
 										대시보드
@@ -330,211 +331,106 @@
 					<input class="datepicker" data-date-format="mm/dd/yyyy">
 				</div>
 				<span class="sr-only">까지</span>
+				<div class="select-type main">
+					<label for="select" class="select-label"><span>유형</span></label>
+					<select name="" id="select" class="form-control">
+						<option value="">일자별</option>
+						<option value="">시간대별</option>
+						<option value="">인입유형별</option>
+					</select>
+				</div>
+				<div class="select-type main">
+					<label for="select" class="select-label"><span>단위</span></label>
+					<select name="" id="select" class="form-control">
+						<option value="">5분</option>
+						<option value="">10분</option>
+						<option value="">15분</option>
+						<option value="">30분</option>
+						<option value="">60분</option>
+					</select>
+				</div>
 				<button type="submit" class="btn-type btn-search">
 							<span class="sr-only">
 								검색
 							</span>
 				</button>
-				<div class="count-area">
-					<div class="month">
-						<strong>
-							11
-						</strong>
-						월
-					</div>
-					<div class="won">
-						총 금액
-						<strong>
-							1,5000,000
-						</strong>
-						원
-					</div>
-				</div>
 			</div>
-			<div class="bill-board">
-				<div class="bill-title">
-					<strong>
-						과금내역
-					</strong>
-				</div>
-				<div class="bill-con">
-					<div class="text-right">
-						<button type="submit" class="btn-type">
-							<span>
-								다운로드
-							</span>
-						</button>
-					</div>
-					<table class="table-bill">
-						<colgroup>
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-							<col width="12.5%">
-						</colgroup>
-						<thead>
-						<tr>
-							<th>
-								회사
-							</th>
-							<th>
-								프로젝트
-							</th>
-							<th>
-								연도
-							</th>
-							<th>
-								월
-							</th>
-							<th>
-								일
-							</th>
-							<th>
-								비과금 건 수
-							</th>
-							<th>
-								과금 건 수
-							</th>
-							<th>
-								과금 비용
-							</th>
-						</tr>
-						</thead>
-						<tfoot>
-						<tr>
-							<td>
-								합계
-							</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td>50,000,000</td>
-							<td>1,000,000</td>
-							<td>100,000,000</td>
-						</tr>
-						<tr>
-							<td>
-								평균
-							</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td>4,166,666</td>
-							<td>83,333</td>
-							<td>8,333,333</td>
-						</tr>
-
-						</tfoot>
-						<tbody>
-						<tr>
-							<td></td>
-							<td></td>
-							<td>2015</td>
-							<td>1</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td>2015</td>
-							<td>2</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td>2015</td>
-							<td>3</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td>2015</td>
-							<td>4</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td>2015</td>
-							<td>5</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td>2015</td>
-							<td>6</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td>2015</td>
-							<td>7</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td>2015</td>
-							<td>8</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td>2015</td>
-							<td>9</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td>2015</td>
-							<td>10</td>
-							<td></td>
-							<td>4,166,667</td>
-							<td>83,334</td>
-							<td>8,333,400</td>
-						</tr>
-						</tbody>
-					</table>
-				</div>
+			<div class="tab-menu depth-3">
+				<ul>
+					<li class="active">
+						<a href="#tab2-1">
+						<span>
+							대시보드 설정
+						</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="tab2-1" class="tab-content depth-3 active">
+				<table class="table-dashboard">
+					<tbody>
+					<tr>
+						<th>
+							총 인입건
+						</th>
+						<td>
+							<strong>
+								3102
+							</strong>
+							건
+						</td>
+						<th>
+							상담사 인입건
+						</th>
+						<td>
+							<strong>
+								2102
+							</strong>
+							건
+						</td>
+					</tr>
+					<tr>
+						<th>
+							상담사<br>전체처리건
+						</th>
+						<td>
+							<strong>
+								1575
+							</strong>
+							건
+						</td>
+						<th>
+							상담사 응대율
+						</th>
+						<td>
+							<strong>
+								94
+							</strong>
+							%
+						</td>
+					</tr>
+					<tr>
+						<th>
+							상담중
+						</th>
+						<td>
+							<strong>
+								402
+							</strong>
+							건
+						</td>
+						<th>
+							대기 건
+						</th>
+						<td>
+							<strong>
+								105
+							</strong>
+							건
+						</td>
+					</tr>
+					</tbody>
+				</table>
 			</div>
 		</form>
 	</div>

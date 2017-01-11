@@ -22,8 +22,10 @@ div#detail-popup{
 			font-weight: normal;
 		}
 	}
+	
 	.cont{
 		padding: 24px;
+		
 		.cont-box{
 			&:after{
 				clear: both;
@@ -31,60 +33,68 @@ div#detail-popup{
 				content: '';
 			}
 		}
-		
 	}
+	
 	.form-group{
 		margin: 0;
 		padding: 0;
 	}
+	
 	.form-control{
 		display: inline-block;
 		margin: 0;
-		padding: 0;
+		padding: 0 0 0 10px;
 		height: 28px;
 		vertical-align: middle;
 		border-radius: 0;
 	}
 	
-	.filebox input[type="file"] {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		padding: 0;
-		margin: -1px;
-		overflow: hidden;
-		clip:rect(0,0,0,0);
-		border: 0;
+	.filebox {
+		input[type="file"] {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			padding: 0;
+			margin: -1px;
+			overflow: hidden;
+			clip:rect(0,0,0,0);
+			border: 0;
+			
+		}
+		
+		label {
+			display: inline-block;
+			padding: .5em .75em;
+			color: #555;
+			font-size: inherit;
+			line-height: normal;
+			vertical-align: middle;
+			background-color: #fdfdfd;
+			cursor: pointer;
+			border: 1px solid #ebebeb;
+			border-bottom-color: #e2e2e2;
+			border-radius: .25em;
+		}
+		
+		.upload-name {
+			display: inline-block;
+			float: left;
+			width: 365px;
+			padding: .5em .75em;
+			font-size: inherit;
+			font-family: inherit;
+			line-height: normal;
+			vertical-align: middle;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 0;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
 	}
-	.filebox label {
-		display: inline-block;
-		padding: .5em .75em;
-		color: #555;
-		font-size: inherit;
-		line-height: normal;
-		vertical-align: middle;
-		background-color: #fdfdfd;
-		cursor: pointer;
-		border: 1px solid #ebebeb;
-		border-bottom-color: #e2e2e2;
-		border-radius: .25em;
-	} /* named upload */
-	.filebox .upload-name {
-		display: inline-block;
-		float: left;
-		width: 365px;
-		padding: .5em .75em; /* label의 패딩값과 일치 */
-		font-size: inherit;
-		font-family: inherit;
-		line-height: normal;
-		vertical-align: middle;
-		background-color: #fff;
-		border: 1px solid #ccc;
-		border-radius: 0;
-		-webkit-appearance: none; /* 네이티브 외형 감추기 */
-		-moz-appearance: none;
-		appearance: none;
-	}
+	
+	
 	.textarea-style{
 		width: 100%;
 		height: 300px;
@@ -97,6 +107,7 @@ div#detail-popup{
 	.table-primary{
 		border-left: 1px solid #ccc;
 		border-right: 1px solid #ccc;
+		
 		th,
 		td{
 			margin: 0;
@@ -125,6 +136,7 @@ div#detail-popup{
 			display: inline-block;
 			background-repeat: no-repeat;
 			background-position: 20px 50%;
+			
 			&.edit{
 				background-image: url(../images/part/popup/edit.png);
 			}
@@ -143,6 +155,7 @@ div#detail-popup{
 				height: 45px;
 				padding: 0 15px 0 40px;
 				line-height: 45px;
+				
 				span{
 					font-size: 16px;
 					color: #fff;
@@ -153,6 +166,7 @@ div#detail-popup{
 	
 	.notice-detail{
 		border-top: 2px solid #555;
+		
 		.title{
 			font-size: 14px;
 			color: #444;
@@ -160,8 +174,10 @@ div#detail-popup{
 			line-height: 40px;
 			padding-left: 15px;
 		}
+		
 		.writer-info{
 			border-top: 1px solid #cfcfcf;
+			
 			li{
 				display: inline-block;
 				padding: 0 5px 0 15px;
@@ -174,6 +190,7 @@ div#detail-popup{
 				&:first-child{
 					background: none;
 				}
+				
 				span{
 					padding-left: 5px;
 					font-size: 12px;
@@ -182,6 +199,7 @@ div#detail-popup{
 				}
 			}
 		}
+		
 		.textarea-style{
 			border-top: 1px solid #cfcfcf;
 			border-bottom: 1px solid #cfcfcf;
@@ -189,6 +207,7 @@ div#detail-popup{
 			overflow-y: scroll;
 			padding: 15px;
 		}
+		
 		.comment-list{
 			li{
 				position: relative;
@@ -200,6 +219,7 @@ div#detail-popup{
 				&:first-child{
 					border: none;
 				}
+				
 				.name{
 					display: block;
 					float: left;
@@ -207,6 +227,7 @@ div#detail-popup{
 					text-align: center;
 					color: #999;
 				}
+				
 				.datetime{
 					position: absolute;
 					right: 0;
@@ -216,10 +237,10 @@ div#detail-popup{
 					padding-right: 10px;
 					text-align: right;
 				}
-				
 			}
 		}
 	}
+	
 	.close-popup{
 		z-index: 1010;
 		position: absolute;
@@ -259,7 +280,9 @@ div#detail-popup{
 div.input-popup{
 	#detail-popup{
 		.head{
+			
 		}
+		
 		.cont{
 			.cont-box{
 				border: 1px solid #ccc;
@@ -294,6 +317,7 @@ div.input-popup{
 							text-align: center;
 							border-right: 1px solid #ccc
 						}
+						
 						&.input-box{
 							padding: 6px;
 							line-height: 28px;
@@ -312,17 +336,14 @@ div.input-popup{
 								height: 28px;
 								font-size: 11px;
 								line-height: 20px;
-								
 							}
-							
 						}
 					}
-					
 				}
-				
 			}
 		}
 	}
+	
 	.count{
 		padding: 0 5px;
 		margin: 0 5px 0 10px;

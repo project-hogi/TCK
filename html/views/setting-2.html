@@ -1,10 +1,223 @@
-<?php $pagePath = isset($_pagePath) ? $_pagePath : __FILE__; ?>
-<?php $bodyClass = "layout-page"; ?>
-<?php require_once $_SERVER["DOCUMENT_ROOT"] . "/lib.php"; ?>
-<?php require "part/app-header.php"; ?>
-<?php require "part/header.php"; ?>
-<?php require "part/header-sub.php"; ?>
+<!DOCTYPE html>
+<!-- App Header.html -->
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="TCK 홈페이지 입니다." />
+<title>TCK</title>
+<meta name="theme-color" content="#977049">
+<meta name="msapplication-navbutton-color" content="#977049">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-startup-image" href="../resources/favicon/android-icon-192x192.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../resources/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../resources/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../resources/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../resources/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../resources/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../resources/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../resources/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../resources/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../resources/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../resources/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../resources/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../resources/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../resources/favicon/favicon-16x16.png">
+<link rel="shortcut icon" href="../resources/favicon/favicon.ico">
+<link rel="manifest" href="../resources/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#977049">
+<meta name="msapplication-TileImage" content="../resources/favicon/android-icon-192x192.png">
+<meta property="og:title" content="TCK">
+<meta property="og:url" content="http://도메인/">
+<meta property="og:image" content="../resources/favicon/android-icon-192x192.png">
+<meta property="og:description" content="TCK 홈페이지 입니다.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TCK">
+<meta name="twitter:url" content="http://도메인/">
+<meta name="twitter:image" content="../resources/favicon/android-icon-192x192.png">
+<meta name="twitter:description" content="TCK 홈페이지 입니다.">
+<link rel="stylesheet" href="../resources/front/css/phone.min.css" />
+<link rel="stylesheet" href="../resources/front-legacy/css/legacy-phone.css" />
+<!--[if lt IE 9]><script src="../resources/front/js/vendor/jquery-1.12.2.min.js"></script><![endif]-->
+<!--[if gte IE 9]><!--><script src="../resources/front/js/vendor/jquery.min.js"></script><![endif]-->
+<script src="../resources/front/js/script.js"></script>
+<script src="../resources/front/js/part/datepicker.js"></script>
+<script src="../resources/front/js/part/dtree.js"></script>
+<script src="../resources/front/js/part/app.js"></script>
+<script src="../resources/front/js/part/page.js"></script>
+<script src="../resources/front/js/part/tab.js"></script>
+<script src="../resources/front/js/part/input.js"></script>
+</head>
+<body class="layout-page">
+<!-- //App Header.html -->
+<div id="wrap">
+	<div id="header-left">
+		<h1 class="logo">
+			<a href="/">
+					<span class="sr-only">
+						TCK 비즈 메시지센터
+						<span class="small">trans cosmos korea biz message center</span>
+					</span>
+			</a>
+		</h1>
+		<div class="lnb">
+			<ul class="lnb-list">
+				<li class="eq-0 active">
+					<a href="#">
+						<span>운영설정</span>
+					</a>
+					<ul>
+						<li 													>
+							<a href="setting-1.html">
+									<span>
+										상담 운영 설정
+									</span>
+							</a>
+						</li>
+						<li 															class="active"
+													>
+							<a href="setting-2.html">
+									<span>
+										챗봇 설정
+									</span>
+							</a>
+						</li>
+						<li 													>
+							<a href="setting-3.html">
+									<span>
+										과금 보기
+									</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="eq-1 ">
+					<a href="bill.html">
+						<span>과금내역</span>
+					</a>
+				</li>
+				<li class="eq-2 ">
+					<a href="stats-stats.html">
+						<span>통계지표</span>
+					</a>
+					<ul>
+						<li >
+							<a href="stats-stats.html">
+									<span>
+										통계
+									</span>
+							</a>
+						</li>
+						<li >
+							<a href="stats-dashboard.html">
+									<span>
+										대시보드
+									</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="eq-3 ">
+					<a href="rawdate-1.html">
+						<span>Rawdate</span>
+					</a>
+					<ul>
+						<li >
+							<a href="rawdate-1.html">
+								<span>
+									데이터 보관
+								</span>
+							</a>
+						</li>
+						<li >
+							<a href="rawdate-2.html">
+								<span>
+									rawdata
+								</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="eq-4 ">
+					<a href="master.html">
+						<span>마스터 메뉴</span>
+					</a>
+					<ul>
+						<li >
+							<a href="master-admin.html">
+									<span>
+										조직 및 계정 관리
+									</span>
+							</a>
+						</li>
+						<li >
+							<a href="master-notice.html">
+									<span>
+										공지사항
+									</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<a href="#" class="header-left-control">
+			<span class="sr-only">
+				header-left controller
+			</span>
+		</a>
+	</div>
+	<div id="header-top">
+		<div class="gnb">
+			<ul>
+				<li class="eq-0">
+					<span class="company">
+						트랜스코스모스코리아
+					</span>
+				</li>
+				<li class="eq-1 individual">
+					<span class="name">김유신</span>
+					님 환영합니다.
 
+					<ul class="individual-list">
+						<li>
+							<a href="#">
+								로그아웃
+							</a>
+						</li>
+						<!--
+						<li>
+							<a href="#">
+								로그인
+							</a>
+						</li>
+						-->
+						<li>
+							<a href="#">
+								내정보
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="member">
+			<a href="login.html">
+				<span class="sr-only">member</span>
+			</a>
+		</div>
+	</div>
+	<!-- /#header -->
+	<div id="container"><div class="section">
+	
+					<h2 class="section-title">
+				<span class="icon icon-this"></span>
+				챗봇 설정
+			</h2>
+		
+		<div id="content">
 	<form action="">
 		<div class="search-box">
 			<div class="text-box">
@@ -14,7 +227,6 @@
 			<div class="select-box">
 				<label for="select" class="select-label"><span>선택하세요</span></label>
 				<select name="" id="select" class="form-control">
-					<option value="">선택하세요</option>
 					<option value="">옵션1</option>
 					<option value="">옵션2</option>
 					<option value="">옵션3</option>
@@ -33,7 +245,7 @@
 		</div>
 	</form>
 	<div class="result-box">
-		<table class="table-primary table-strip">
+		<table class="table-primary table-select">
 			<thead>
 			<tr>
 				<th>번호</th>
@@ -92,14 +304,14 @@
 	<!-- tab-menu -->
 	<div class="tab-menu depth-1">
 		<ul>
-			<li class="active">
+			<li>
 				<a href="#tab1">
 					<span>
 						상담 운영 설정
 					</span>
 				</a>
 			</li>
-			<li>
+			<li class="active">
 				<a href="#tab2">
 					<span>
 						챗봇 설정
@@ -108,14 +320,11 @@
 			</li>
 		</ul>
 	</div>
-
-
 	<!-- tab1 -->
-	<div id="tab1" class="tab-content active">
-
+	<div id="tab1" class="tab-content">
 		<div class="tab-menu depth-2">
 			<ul>
-				<li>
+				<li class="active">
 					<a href="#tab1-1">
 						<span>
 							상담 운영 시간
@@ -136,7 +345,7 @@
 						</span>
 					</a>
 				</li>
-				<li class="active">
+				<li>
 					<a href="#tab1-5">
 						<span>
 							개인 정보 수집
@@ -152,8 +361,7 @@
 				</li>
 			</ul>
 		</div>
-		<div id="tab1-1" class="tab-content depth-2">
-
+		<div id="tab1-1" class="tab-content depth-2 active">
 			<form action="">
 				<div class="tab-menu depth-3">
 					<ul>
@@ -166,7 +374,6 @@
 						</li>
 					</ul>
 				</div>
-
 				<div id="tab1-1-1" class="tab-content depth-3 active">
 					<div class="weekly">
 						<ul class="weekly-setting">
@@ -178,7 +385,6 @@
 								</div>
 								<div class="con">
 									<div class="from-group">
-
 										<div class="select-type">
 											<label for="select" class="select-label"><span>10:00</span></label>
 											<select name="" id="select" class="form-control">
@@ -193,11 +399,9 @@
 												<option value="">18:00</option>
 											</select>
 										</div>
-
 									</div>
 									<span class="block-box">&#126;<span class="sr-only">부터</span></span>
 									<div class="from-group">
-
 										<div class="select-type">
 											<label for="select" class="select-label"><span>16:00</span></label>
 											<select name="" id="select" class="form-control">
@@ -212,21 +416,17 @@
 												<option value="">18:00</option>
 											</select>
 										</div>
-
 									</div>
 									<span class="sr-only">까지</span>
 								</div>
 								<div class="foot">
-
 									<div class="radio-option">
 										<input type="radio" id="tab1-1-1-1-option-on" name="tab1-1-1-1-option" checked>
 										<label for="tab1-1-1-1-option-on">ON</label>
 										<input type="radio" id="tab1-1-1-1-option-off" name="tab1-1-1-1-option">
 										<label for="tab1-1-1-1-option-off">OFF</label>
 									</div>
-
 								</div>
-
 							</li>
 							<li class="tue">
 								<div class="tit">
@@ -236,7 +436,6 @@
 								</div>
 								<div class="con">
 									<div class="from-group">
-
 										<div class="select-type">
 											<label for="select" class="select-label"><span>10:00</span></label>
 											<select name="" id="select" class="form-control">
@@ -251,11 +450,9 @@
 												<option value="">18:00</option>
 											</select>
 										</div>
-
 									</div>
 									<span class="block-box">&#126;<span class="sr-only">부터</span></span>
 									<div class="from-group">
-
 										<div class="select-type">
 											<label for="select" class="select-label"><span>16:00</span></label>
 											<select name="" id="select" class="form-control">
@@ -270,21 +467,17 @@
 												<option value="">18:00</option>
 											</select>
 										</div>
-
 									</div>
 									<span class="sr-only">까지</span>
 								</div>
 								<div class="foot">
-
 									<div class="radio-option">
 										<input type="radio" id="tab1-1-1-2-option-on" name="tab1-1-1-2-option" checked>
 										<label for="tab1-1-1-2-option-on">ON</label>
 										<input type="radio" id="tab1-1-1-2-option-off" name="tab1-1-1-2-option">
 										<label for="tab1-1-1-2-option-off">OFF</label>
 									</div>
-
 								</div>
-
 							</li>
 							<li class="wed">
 								<div class="tit">
@@ -294,7 +487,6 @@
 								</div>
 								<div class="con">
 									<div class="from-group">
-
 										<div class="select-type">
 											<label for="select" class="select-label"><span>10:00</span></label>
 											<select name="" id="select" class="form-control">
@@ -309,11 +501,9 @@
 												<option value="">18:00</option>
 											</select>
 										</div>
-
 									</div>
 									<span class="block-box">&#126;<span class="sr-only">부터</span></span>
 									<div class="from-group">
-
 										<div class="select-type">
 											<label for="select" class="select-label"><span>16:00</span></label>
 											<select name="" id="select" class="form-control">
@@ -328,21 +518,17 @@
 												<option value="">18:00</option>
 											</select>
 										</div>
-
 									</div>
 									<span class="sr-only">까지</span>
 								</div>
 								<div class="foot">
-
 									<div class="radio-option">
 										<input type="radio" id="tab1-1-1-3-option-on" name="tab1-1-1-3-option" checked>
 										<label for="tab1-1-1-3-option-on">ON</label>
 										<input type="radio" id="tab1-1-1-3-option-off" name="tab1-1-1-3-option">
 										<label for="tab1-1-1-3-option-off">OFF</label>
 									</div>
-
 								</div>
-
 							</li>
 							<li class="thu">
 								<div class="tit">
@@ -352,7 +538,6 @@
 								</div>
 								<div class="con">
 									<div class="from-group">
-
 										<div class="select-type">
 											<label for="select" class="select-label"><span>10:00</span></label>
 											<select name="" id="select" class="form-control">
@@ -367,11 +552,9 @@
 												<option value="">18:00</option>
 											</select>
 										</div>
-
 									</div>
 									<span class="block-box">&#126;<span class="sr-only">부터</span></span>
 									<div class="from-group">
-
 										<div class="select-type">
 											<label for="select" class="select-label"><span>16:00</span></label>
 											<select name="" id="select" class="form-control">
@@ -386,21 +569,17 @@
 												<option value="">18:00</option>
 											</select>
 										</div>
-
 									</div>
 									<span class="sr-only">까지</span>
 								</div>
 								<div class="foot">
-
 									<div class="radio-option">
 										<input type="radio" id="tab1-1-1-4-option-on" name="tab1-1-1-4-option" checked>
 										<label for="tab1-1-1-4-option-on">ON</label>
 										<input type="radio" id="tab1-1-1-4-option-off" name="tab1-1-1-4-option">
 										<label for="tab1-1-1-4-option-off">OFF</label>
 									</div>
-
 								</div>
-
 							</li>
 							<li class="fri">
 								<div class="tit">
@@ -410,7 +589,6 @@
 								</div>
 								<div class="con">
 									<div class="from-group">
-
 										<div class="select-type">
 											<label for="select" class="select-label"><span>10:00</span></label>
 											<select name="" id="select" class="form-control">
@@ -425,11 +603,9 @@
 												<option value="">18:00</option>
 											</select>
 										</div>
-
 									</div>
 									<span class="block-box">&#126;<span class="sr-only">부터</span></span>
 									<div class="from-group">
-
 										<div class="select-type">
 											<label for="select" class="select-label"><span>16:00</span></label>
 											<select name="" id="select" class="form-control">
@@ -444,21 +620,17 @@
 												<option value="">18:00</option>
 											</select>
 										</div>
-
 									</div>
 									<span class="sr-only">까지</span>
 								</div>
 								<div class="foot">
-
 									<div class="radio-option">
 										<input type="radio" id="tab1-1-1-5-option-on" name="tab1-1-1-5-option" checked>
 										<label for="tab1-1-1-5-option-on">ON</label>
 										<input type="radio" id="tab1-1-1-5-option-off" name="tab1-1-1-5-option">
 										<label for="tab1-1-1-5-option-off">OFF</label>
 									</div>
-
 								</div>
-
 							</li>
 							<li class="sat">
 								<div class="tit">
@@ -468,7 +640,6 @@
 								</div>
 								<div class="con">
 									<div class="from-group">
-
 										<div class="select-type">
 											<label for="select" class="select-label"><span>10:00</span></label>
 											<select name="" id="select" class="form-control">
@@ -483,11 +654,9 @@
 												<option value="">18:00</option>
 											</select>
 										</div>
-
 									</div>
 									<span class="block-box">&#126;<span class="sr-only">부터</span></span>
 									<div class="from-group">
-
 										<div class="select-type">
 											<label for="select" class="select-label"><span>16:00</span></label>
 											<select name="" id="select" class="form-control">
@@ -502,21 +671,17 @@
 												<option value="">18:00</option>
 											</select>
 										</div>
-
 									</div>
 									<span class="sr-only">까지</span>
 								</div>
 								<div class="foot">
-
 									<div class="radio-option">
 										<input type="radio" id="tab1-1-1-6-option-on" name="tab1-1-1-6-option" checked>
 										<label for="tab1-1-1-6-option-on">ON</label>
 										<input type="radio" id="tab1-1-1-6-option-off" name="tab1-1-1-6-option">
 										<label for="tab1-1-1-6-option-off">OFF</label>
 									</div>
-
 								</div>
-
 							</li>
 							<li class="sun">
 								<div class="tit">
@@ -526,7 +691,6 @@
 								</div>
 								<div class="con">
 									<div class="from-group">
-
 										<div class="select-type">
 											<label for="select" class="select-label"><span>10:00</span></label>
 											<select name="" id="select" class="form-control">
@@ -541,11 +705,9 @@
 												<option value="">18:00</option>
 											</select>
 										</div>
-
 									</div>
 									<span class="block-box">&#126;<span class="sr-only">부터</span></span>
 									<div class="from-group">
-
 										<div class="select-type">
 											<label for="select" class="select-label"><span>16:00</span></label>
 											<select name="" id="select" class="form-control">
@@ -560,46 +722,37 @@
 												<option value="">18:00</option>
 											</select>
 										</div>
-
 									</div>
 									<span class="sr-only">까지</span>
 								</div>
 								<div class="foot">
-
 									<div class="radio-option">
 										<input type="radio" id="tab1-1-1-7-option-on" name="tab1-1-1-7-option" checked>
 										<label for="tab1-1-1-7-option-on">ON</label>
 										<input type="radio" id="tab1-1-1-7-option-off" name="tab1-1-1-7-option">
 										<label for="tab1-1-1-7-option-off">OFF</label>
 									</div>
-
 								</div>
-
 							</li>
-
 						</ul>
-
 						<div class="tab-menu depth-3">
 							<ul>
 								<li class="active">
 									<a href="#tab1-2-1">
-						<span>
-							일시정지 설정 <span class="small">* ON: 상담 운영을 긴급하게 중단, OFF: 상담 진행 됨</span>
-						</span>
+										<span>
+											일시정지 설정 <span class="small">* ON: 상담 운영을 긴급하게 중단, OFF: 상담 진행 됨</span>
+										</span>
 									</a>
 								</li>
 							</ul>
 						</div>
-
 						<div id="tab1-2-1" class="tab-content depth-3 active">
-
 							<div class="radio-option" style="margin-left: 30px;">
 								<input type="radio" id="tab1-2-1-option-on" name="tab1-2-1-option">
 								<label for="tab1-2-1-option-on">ON</label>
 								<input type="radio" id="tab1-2-1-option-off" name="tab1-2-1-option" checked>
 								<label for="tab1-2-1-option-off">OFF</label>
 							</div>
-
 						</div>
 					</div>
 					<div class="submit-area">
@@ -607,19 +760,10 @@
 							저장
 						</button>
 					</div>
-
-
-
-
-
 				</div>
 			</form>
-
 		</div>
-		
 		<div id="tab1-3" class="tab-content depth-2">
-
-
 			<form action="">
 				<div class="tab-menu depth-3">
 					<ul>
@@ -632,7 +776,6 @@
 						</li>
 					</ul>
 				</div>
-
 				<div id="tab1-3-1" class="tab-content depth-3 active">
 					<div class="content-box text-center">
 						<div class="date-option">
@@ -940,8 +1083,6 @@
 			</form>
 		</div>
 		<div id="tab1-4" class="tab-content depth-2">
-
-
 			<form action="">
 				<div class="tab-menu depth-3">
 					<ul>
@@ -954,7 +1095,6 @@
 						</li>
 					</ul>
 				</div>
-
 				<div id="tab1-4-1" class="tab-content depth-3 active">
 					<table class="table-basic">
 						<tbody>
@@ -1040,9 +1180,7 @@
 				</div>
 			</form>
 		</div>
-		<div id="tab1-5" class="tab-content depth-2 active">
-
-
+		<div id="tab1-5" class="tab-content depth-2">
 			<form action="">
 				<div class="tab-menu depth-3">
 					<ul>
@@ -1055,12 +1193,9 @@
 						</li>
 					</ul>
 				</div>
-
 				<div id="tab1-5-1" class="tab-content depth-3 active">
 					<div class="option-area">
-
 						<div class="option-list">
-
 							<table class="table-primary form">
 								<col width="10%">
 								<col width="30%">
@@ -1201,7 +1336,6 @@
 											<label for="sex-option-off-man">남자</label>
 										</div>
 										-->
-
 									</td>
 								</tr>
 								<tr>
@@ -1213,7 +1347,7 @@
 										개인정보 활용 동의
 									</th>
 									<td class="text-left">
-										<div class="form-check dib">
+										<div class="agree-check dib">
 											<input type="checkbox" id="personal">
 											<label for="personal">동의합니다</label>
 										</div>
@@ -1235,7 +1369,7 @@
 										마케팅활용 동의
 									</th>
 									<td class="text-left">
-										<div class="form-check dib">
+										<div class="agree-check dib">
 											<input type="checkbox" id="marketing">
 											<label for="marketing">동의합니다</label>
 										</div>
@@ -1248,7 +1382,6 @@
 										</div>
 									</td>
 								</tr>
-
 								</tbody>
 							</table>
 						</div>
@@ -1260,12 +1393,9 @@
 								<button class="btn-type btn-delete">
 									제거
 								</button>
-
 							</div>
-
 						</div>
 						<div class="option-selected">
-
 							<table class="table-primary form">
 								<col width="10%">
 								<col width="30%">
@@ -1407,26 +1537,12 @@
 											<label for="sex-option-off-man">남자</label>
 										</div>
 										-->
-
 									</td>
 								</tr>
-
-
-
-
-
-
-
-
 								</tbody>
 							</table>
 						</div>
-
-
-
 					</div>
-
-
 					<div class="submit-area">
 						<button type="submit" class="submit">
 							저장
@@ -1437,8 +1553,6 @@
 			</form>
 		</div>
 		<div id="tab1-6" class="tab-content depth-2">
-
-
 			<form action="">
 				<div class="tab-menu depth-3">
 					<ul>
@@ -1451,49 +1565,24 @@
 						</li>
 					</ul>
 				</div>
-
 				<div id="tab1-6-1" class="tab-content depth-3 active">
-
 
 				</div>
 			</form>
 		</div>
-
-
-
-
-
-
-
-
-
-
-
-
 	</div>
-
-
-
-
-
-
-
-
-
-
-
 	<!-- tab2 -->
-	<div id="tab2" class="tab-content">
+	<div id="tab2" class="tab-content active">
 		<div class="tab-menu depth-2">
 			<ul>
-				<li>
+				<li class="active">
 					<a href="#tab2-1">
 						<span>
 							인입 유형 관리
 						</span>
 					</a>
 				</li>
-				<li class="active">
+				<li>
 					<a href="#tab2-2">
 						<span>
 							키워드 자동 응답
@@ -1502,7 +1591,7 @@
 				</li>
 			</ul>
 		</div>
-		<div id="tab2-1" class="tab-content depth-2">
+		<div id="tab2-1" class="tab-content depth-2 active">
 			<form action="">
 				<div class="tab-menu depth-3">
 					<ul>
@@ -1515,7 +1604,6 @@
 						</li>
 					</ul>
 				</div>
-
 				<div id="tab2-1-1" class="tab-content depth-3 active">
 					<div class="radio-option">
 						<input type="radio" id="option-on" name="classify-option">
@@ -1856,8 +1944,7 @@
 				</div>
 			</form>
 		</div>
-		<div id="tab2-2" class="tab-content depth-2 active">
-
+		<div id="tab2-2" class="tab-content depth-2">
 			<form action="">
 				<div class="tab-menu depth-3">
 					<ul>
@@ -1884,7 +1971,6 @@
 						</li>
 					</ul>
 				</div>
-
 				<div id="tab2-2-1" class="tab-content depth-3">
 					<div class="search-type">
 						<ul class="list-type">
@@ -2191,7 +2277,6 @@
 								</li>
 							</ul>
 						</div>
-
 						<table class="table-form">
 							<tbody>
 							<tr>
@@ -2203,7 +2288,6 @@
 										<div class="select-box w255">
 											<label for="select" class="select-label"><span>선택하세요</span></label>
 											<select name="" id="select" class="form-control">
-												<option value="">선택하세요</option>
 												<option value="">옵션1</option>
 												<option value="">옵션2</option>
 												<option value="">옵션3</option>
@@ -2212,7 +2296,6 @@
 										<div class="select-box w255">
 											<label for="select" class="select-label"><span>선택하세요</span></label>
 											<select name="" id="select" class="form-control">
-												<option value="">선택하세요</option>
 												<option value="">옵션1</option>
 												<option value="">옵션2</option>
 												<option value="">옵션3</option>
@@ -2221,7 +2304,6 @@
 										<div class="select-box w255">
 											<label for="select" class="select-label"><span>선택하세요</span></label>
 											<select name="" id="select" class="form-control">
-												<option value="">선택하세요</option>
 												<option value="">옵션1</option>
 												<option value="">옵션2</option>
 												<option value="">옵션3</option>
@@ -2261,9 +2343,7 @@
 								</td>
 							</tr>
 							</tbody>
-
 						</table>
-
 					</div>
 					<div class="submit-area">
 						<button type="submit" class="submit">
@@ -2273,7 +2353,6 @@
 							편집
 						</button>
 					</div>
-
 				</div>
 				<div id="tab2-2-2" class="tab-content depth-3">
 					<table class="table-form">
@@ -2368,9 +2447,6 @@
 								</div>
 							</td>
 						</tr>
-
-
-
 						<tr>
 							<th>
 								상담사 연결 지연
@@ -2549,11 +2625,10 @@
 						</tr>
 
 						</tbody>
-
 					</table>
 				</div>
 				<div id="tab2-2-3" class="tab-content depth-3 active">
-					<div class="left-list">
+					<div class="left-list list-select">
 						<div class="tit">
 							항목리스트
 						</div>
@@ -2705,7 +2780,6 @@
 
 						</table>
 					</div>
-
 					<div class="submit-area">
 						<button type="submit" class="submit">
 							저장
@@ -2718,36 +2792,32 @@
 						</button>
 					</div>
 				</div>
-
-
 			</form>
-
 		</div>
-
 	</div>
 	<div id="tab3" class="tab-content">
-
 		<span>
 			tab3
 		</span>
 	</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php require "part/footer-sub.php"; ?>
-<?php require "part/footer.php"; ?>
-<?php require "part/app-footer.php"; ?>
+</div>
+<!-- /#content -->
+</div>
+<!-- /.section --></div>
+<!-- /#container -->
+<div id="footer">
+	<p class="copyright">
+		ⓒ 2017. transcosmos korea Inc. All rights reserved.
+	</p>
+	<a class="foot-logo">
+		<span class="sr-only">transcosmos</span>
+	</a>
+</div>
+<!-- /#footer -->
+</div>
+<!-- /#wrap -->
+<!-- App Footer.html -->
+</body>
+</html>
+<!-- //App Footer.html -->

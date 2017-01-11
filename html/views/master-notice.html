@@ -43,6 +43,7 @@
 <!--[if lt IE 9]><script src="../resources/front/js/vendor/jquery-1.12.2.min.js"></script><![endif]-->
 <!--[if gte IE 9]><!--><script src="../resources/front/js/vendor/jquery.min.js"></script><![endif]-->
 <script src="../resources/front/js/script.js"></script>
+<script src="../resources/front/js/part/datepicker.js"></script>
 <script src="../resources/front/js/part/dtree.js"></script>
 <script src="../resources/front/js/part/app.js"></script>
 <script src="../resources/front/js/part/page.js"></script>
@@ -52,7 +53,6 @@
 <body class="layout-page">
 <!-- //App Header.html -->
 <div id="wrap">
-
 	<div id="header-left">
 		<h1 class="logo">
 			<a href="/">
@@ -64,41 +64,27 @@
 		</h1>
 		<div class="lnb">
 			<ul class="lnb-list">
-				<li class="eq-0">
+				<li class="eq-0 ">
 					<a href="#">
 						<span>운영설정</span>
 					</a>
 					<ul>
-						<li>
-							<a href="notice.html">
-									<span>
-										공지사항
-									</span>
-							</a>
-						</li>
-						<li>
-							<a href="setting.html">
+						<li >
+							<a href="setting-1.html">
 									<span>
 										상담 운영 설정
 									</span>
 							</a>
 						</li>
-						<li>
-							<a href="setting.html">
+						<li >
+							<a href="setting-2.html">
 									<span>
 										챗봇 설정
 									</span>
 							</a>
 						</li>
-						<li>
-							<a href="setting.html">
-									<span>
-										차단 설정
-									</span>
-							</a>
-						</li>
-						<li>
-							<a href="setting.html">
+						<li >
+							<a href="setting-3.html">
 									<span>
 										과금 보기
 									</span>
@@ -106,25 +92,25 @@
 						</li>
 					</ul>
 				</li>
-				<li class="eq-1 active">
+				<li class="eq-1 ">
 					<a href="bill.html">
 						<span>과금내역</span>
 					</a>
 				</li>
-				<li class="eq-2">
-					<a href="stats.html">
+				<li class="eq-2 ">
+					<a href="stats-stats.html">
 						<span>통계지표</span>
 					</a>
 					<ul>
-						<li>
-							<a href="stats.html">
+						<li >
+							<a href="stats-stats.html">
 									<span>
 										통계
 									</span>
 							</a>
 						</li>
-						<li>
-							<a href="stats.html">
+						<li >
+							<a href="stats-dashboard.html">
 									<span>
 										대시보드
 									</span>
@@ -132,20 +118,20 @@
 						</li>
 					</ul>
 				</li>
-				<li class="eq-3">
-					<a href="rawdate.html">
+				<li class="eq-3 ">
+					<a href="rawdate-1.html">
 						<span>Rawdate</span>
 					</a>
 					<ul>
-						<li>
-							<a href="rawdate.html">
+						<li >
+							<a href="rawdate-1.html">
 								<span>
 									데이터 보관
 								</span>
 							</a>
 						</li>
-						<li>
-							<a href="rawdate.html">
+						<li >
+							<a href="rawdate-2.html">
 								<span>
 									rawdata
 								</span>
@@ -153,19 +139,20 @@
 						</li>
 					</ul>
 				</li>
-				<li class="eq-4">
+				<li class="eq-4 active">
 					<a href="master.html">
 						<span>마스터 메뉴</span>
 					</a>
 					<ul>
-						<li>
+						<li 													>
 							<a href="master-admin.html">
 									<span>
 										조직 및 계정 관리
 									</span>
 							</a>
 						</li>
-						<li>
+						<li 															class="active"
+													>
 							<a href="master-notice.html">
 									<span>
 										공지사항
@@ -217,21 +204,18 @@
 			</ul>
 		</div>
 		<div class="member">
-			<a href="#">
+			<a href="login.html">
 				<span class="sr-only">member</span>
 			</a>
 		</div>
 	</div>
 	<!-- /#header -->
 	<div id="container"><div class="section">
-	
-					<h2 class="section-title">
+						<h2 class="section-title">
 				<span class="icon icon-this"></span>
 				공지사항
 			</h2>
-		
-		<div id="content">
-
+				<div id="content">
 	<form action="">
 		<div class="search-box">
 			<div class="select-box w120">
@@ -352,13 +336,8 @@
 		</div>
 	</div>
 
-
-
-
-
 </div>
 <!-- /#content -->
-
 </div>
 <!-- /.section --></div>
 <!-- /#container -->
@@ -371,13 +350,12 @@
 	</a>
 </div>
 <!-- /#footer -->
-
 </div>
-<!-- /#wrap --><!-- App Footer.html -->
+<!-- /#wrap -->
+<!-- App Footer.html -->
 </body>
 </html>
 <!-- //App Footer.html -->
-
 <!-- 팝업 -->
 <div id="new-project-popup" role="dialog" class="modal fade">
 	<div class="modal-dialog">
@@ -458,8 +436,6 @@
 						</tr>
 						</tbody>
 					</table>
-
-
 					<div class="submit-area">
 						<button type="submit" class="submit">
 							확인

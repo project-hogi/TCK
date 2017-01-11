@@ -6,9 +6,11 @@
 			display: block;
 			content: '';
 		}
+		
 		li{
 			width: 170px;
 			float: left;
+			
 			a{
 				span{
 					font-size: 14px;
@@ -22,6 +24,7 @@
 		margin-top: 15px;
 		border: 1px solid #dcdcdc;
 		border-bottom: 2px solid #626262;
+		
 		ul{
 			li{
 				a{
@@ -36,18 +39,20 @@
 						height: 100%;
 						vertical-align: middle;
 					}
+					
 					span{
 						display: inline-block;
 						max-width: 90%;
 						vertical-align: middle;
-						
 					}
 				}
+				
 				&:hover,
 				&:focus,
 				&.active,
 				&.on{
 					background-color: #626262;
+					
 					a{
 						span{
 							color: #fff;
@@ -57,9 +62,11 @@
 			}
 		}
 	}
+	
 	&.depth-2{
 		margin-top: 7px;
 		border-bottom: 1px solid #dcdcdc;
+		
 		ul{
 			li{
 				position: relative;
@@ -68,6 +75,7 @@
 						display: none;
 					}
 				}
+				
 				&:after {
 					position: absolute;
 					left: 0;
@@ -80,6 +88,7 @@
 					margin-top: -7px;
 					background-color: #dcdcdc;
 				}
+				
 				a{
 					position: relative;
 					display: block;
@@ -93,13 +102,14 @@
 						height: 100%;
 						vertical-align: middle;
 					}
+					
 					span{
 						display: inline-block;
 						max-width: 90%;
 						vertical-align: middle;
-						
 					}
 				}
+				
 				&:hover,
 				&:focus,
 				&.active,
@@ -108,6 +118,7 @@
 						span{
 							color: #333;
 						}
+						
 						&:after{
 							position: absolute;
 							left: 0;
@@ -124,11 +135,14 @@
 			}
 		}
 	}
+	
 	&.depth-3{
 		margin-top: 15px;
 		height: 40px;
+		
 		ul{
 			height: 100%;
+			
 			li{
 				width: auto;
 				height: 100%;
@@ -159,6 +173,7 @@
 					&:after{
 						background-color: #999;
 					}
+					
 					a{
 						span{
 							color: #222;
@@ -171,6 +186,7 @@
 					height: 100%;
 					padding: 0 20px 0 34px;
 					line-height: 40px;
+					
 					span{
 						span.small{
 							font-size: 13px;
@@ -182,18 +198,22 @@
 		}
 	}
 }
+
 /* tab-content */
 .tab-content{
 	margin-top: 10px;
 	display: none;
+	
 	&:after{
 		clear: both;
 		display: block;
 		content: '';
 	}
+	
 	&.active{
 		display: block;
 	}
+	
 	&.depth-2{
 		
 	}
