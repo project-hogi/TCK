@@ -107,7 +107,7 @@
 						<?php } ?>>
 							<a href="rawdate-2.php">
 								<span>
-									rawdata
+									Rawdata
 								</span>
 							</a>
 						</li>
