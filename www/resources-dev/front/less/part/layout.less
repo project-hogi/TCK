@@ -166,6 +166,11 @@ body,
 					display: none;
 					padding: 10px 0;
 					background-color: #343841;
+					-webkit-transition: all ease-in-out 0.3s;
+					-moz-transition: all ease-in-out 0.3s;
+					-ms-transition: all ease-in-out 0.3s;
+					-o-transition: all ease-in-out 0.3s;
+					transition: all ease-in-out 0.3s;
 					
 					li{
 						a{
@@ -280,6 +285,13 @@ body,
 						background-position: 85% 50%;
 						
 						span{
+							display: none;
+						}
+					}
+					
+					&.active,
+					&.on{
+						ul{
 							display: none;
 						}
 					}

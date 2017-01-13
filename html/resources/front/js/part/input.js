@@ -51,6 +51,9 @@
         /* 기본 선택된 값으로 label값을 change 해준다 */
         $('.search-box').find('select').trigger('change');
 
+        /* 기본 선택된 값으로 label값을 change 해준다 */
+        $('.select-type').find('select').trigger('change');
+
     });
 
 })(jQuery);

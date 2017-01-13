@@ -23,32 +23,14 @@ $config["imageDir"] = $config["resourcesDir"]  . "/images";
 <meta name="msapplication-navbutton-color" content="<?php echo $config["themeColor"]; ?>">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="apple-touch-startup-image" href="/resources/favicon/android-icon-192x192.png">
-<link rel="apple-touch-icon" sizes="57x57" href="/resources/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/resources/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/resources/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/resources/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/resources/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/resources/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/resources/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/resources/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/resources/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/resources/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/resources/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
 <link rel="shortcut icon" href="/resources/favicon/favicon.ico">
-<link rel="manifest" href="/resources/favicon/manifest.json">
 <meta name="msapplication-TileColor" content="<?php echo $config["themeColor"]; ?>">
-<meta name="msapplication-TileImage" content="/resources/favicon/android-icon-192x192.png">
 <meta property="og:title" content="<?php echo $config["sitename"]; ?>">
 <meta property="og:url" content="http://도메인/">
-<meta property="og:image" content="/resources/favicon/android-icon-192x192.png">
 <meta property="og:description" content="<?php echo $config["sitename"]; ?> 홈페이지 입니다.">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="<?php echo $config["sitename"]; ?>">
 <meta name="twitter:url" content="http://도메인/">
-<meta name="twitter:image" content="/resources/favicon/android-icon-192x192.png">
 <meta name="twitter:description" content="<?php echo $config["sitename"]; ?> 홈페이지 입니다.">
 <?php if($config['isDev'] === true && (isset($config['isBuild']) && !$config['isBuild'] || !isset($config['isBuild']))){ ?>
 <link rel="stylesheet/less" href="<?php echo $config["resourcesDir"]; ?>/less/phone.less" />
