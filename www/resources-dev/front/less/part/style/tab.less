@@ -198,7 +198,46 @@
 		}
 	}
 }
-
+.tab-depth3-style{
+	
+	width: auto;
+	height: 40px;
+	margin-top: 15px;
+	position: relative;
+	
+	&:after{
+		z-index: -10;
+		clear: both;
+		display: block;
+		content: '';
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		background-color: #dfdfdf;
+		background-image: url(../images/part/tab/tabmenu-depth-3.png);
+		background-repeat: no-repeat;
+		background-position: 60% 60%;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -12px;
+	}
+	
+	a,
+	.title{
+		display: inline-block;
+		height: 100%;
+		padding: 0 20px 0 34px;
+		line-height: 40px;
+		
+		span{
+			span.small{
+				font-size: 13px;
+				color: #a0a0a0;
+			}
+		}
+	}
+}
 /* tab-content */
 .tab-content{
 	margin-top: 10px;

@@ -883,6 +883,9 @@ div#container{
 			}
 		}
 	}
+	
+	
+	
 }
 
 .bar{
@@ -962,4 +965,87 @@ div#container{
 		background: url(../images/part/section/form/download.png) 50% 50% no-repeat;
 		
 	}
+}
+
+
+.section-setting{
+	position: relative;
+	
+	&.has-tree{
+		.tree-area{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 300px;
+			height: 100%;
+			padding: 10px;
+			border: 1px solid #c6c6c6;
+			
+		}
+		
+		.content-area{
+			display: block;
+			margin-left: 320px;
+			border: 1px solid #c6c6c6;
+			
+			.table-primary{
+				margin: 0;
+				border-top: 0;
+			}
+		}
+	}
+	
+	&.has-2content{
+		position: relative;
+		&:after{
+			clear: both;
+			display: block;
+			content: '';
+		}
+		[class*="content-"]{
+			width: 50%;
+			float: left;
+			.table-primary{
+				margin: 0;
+				border: 0;
+				border-bottom: 0;
+			}
+			.con-wrap{
+				border: 1px solid #c6c6c6;
+				height: 100%;
+			}
+			&.left-side{
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				.con-wrap{
+					padding: 10px;
+					.result-box{
+						max-height: 336px;
+						overflow: hidden;
+					}
+					.table-primary{
+						border-top: 2px solid #626262;
+					}
+				}
+			}
+			&.right-side{
+				margin-left: 50%;
+				
+			}
+		}
+		.content-1{
+			padding-right: 10px;
+			.search-box{
+				&.text-right{
+					margin-top: 10px;
+				}
+			}
+		}
+		.content-2{
+			padding-left: 10px;
+		}
+	}
+	
 }
