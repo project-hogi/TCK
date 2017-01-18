@@ -3149,3 +3149,36 @@
 	</div>
 </div>
 <!-- //팝업 -->
+
+
+<!-- 팝업 -->
+<div id="preview-cont-popup" role="dialog" class="modal fade">
+	<div class="modal-dialog">
+		<div id="detail-popup" class="modal-content setting w500">
+			<h2 class="sr-only">
+				팝업창
+			</h2>
+			<div class="head">
+				<h3 class="title">미리보기</h3>
+				<a href="#" class="close-popup" data-dismiss="modal">
+					<span class="sr-only">
+						팝업 닫기
+					</span>
+				</a>
+			</div>
+			<div class="cont">
+				<div class="cont-box">
+
+
+
+				</div>
+				<div class="submit-area">
+					<button type="submit" class="submit">
+						확인
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //팝업 -->
