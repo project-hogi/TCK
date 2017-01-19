@@ -1,203 +1,10 @@
-<!DOCTYPE html>
-<!-- App Header.html -->
-<html lang="ko-KR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="TCK 홈페이지 입니다." />
-<title>TCK</title>
-<meta name="theme-color" content="#977049">
-<meta name="msapplication-navbutton-color" content="#977049">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="shortcut icon" href="../resources/favicon/favicon.ico">
-<meta name="msapplication-TileColor" content="#977049">
-<meta property="og:title" content="TCK">
-<meta property="og:url" content="http://도메인/">
-<meta property="og:description" content="TCK 홈페이지 입니다.">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TCK">
-<meta name="twitter:url" content="http://도메인/">
-<meta name="twitter:description" content="TCK 홈페이지 입니다.">
-<link rel="stylesheet" href="../resources/front/css/phone.min.css" />
-<link rel="stylesheet" href="../resources/front-legacy/css/legacy-phone.css" />
-<!--[if lt IE 9]><script src="../resources/front/js/vendor/jquery-1.12.2.min.js"></script><![endif]-->
-<!--[if gte IE 9]><!--><script src="../resources/front/js/vendor/jquery.min.js"></script><![endif]-->
-<script src="../resources/front/js/script.js"></script>
-<script src="../resources/front/js/part/datepicker.js"></script>
-<script src="../resources/front/js/part/dtree.js"></script>
-<script src="../resources/front/js/part/app.js"></script>
-<script src="../resources/front/js/part/page.js"></script>
-<script src="../resources/front/js/part/tab.js"></script>
-<script src="../resources/front/js/part/input.js"></script>
-</head>
-<body class="layout-page">
-<!-- //App Header.html -->
-<div id="wrap">
-	<div id="header-left">
-		<h1 class="logo">
-			<a href="/">
-					<span class="sr-only">
-						TCK 비즈 메시지센터
-						<span class="small">trans cosmos korea biz message center</span>
-					</span>
-			</a>
-		</h1>
-		<div class="lnb">
-			<ul class="lnb-list">
-				<li class="eq-0 active">
-					<a href="#">
-						<span>운영설정</span>
-					</a>
-					<ul>
-						<li 															class="active"
-													>
-							<a href="setting-1.html">
-									<span>
-										상담 운영 설정
-									</span>
-							</a>
-						</li>
-						<li 													>
-							<a href="setting-2.html">
-									<span>
-										챗봇 설정
-									</span>
-							</a>
-						</li>
-						<li 													>
-							<a href="setting-3.html">
-									<span>
-										과금 보기
-									</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li class="eq-1 ">
-					<a href="bill.html">
-						<span>과금내역</span>
-					</a>
-				</li>
-				<li class="eq-2 ">
-					<a href="stats-stats.html">
-						<span>통계지표</span>
-					</a>
-					<ul>
-						<li >
-							<a href="stats-stats.html">
-									<span>
-										통계
-									</span>
-							</a>
-						</li>
-						<li >
-							<a href="stats-dashboard.html">
-									<span>
-										대시보드
-									</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li class="eq-3 ">
-					<a href="rawdate-1.html">
-						<span>Rawdate</span>
-					</a>
-					<ul>
-						<li >
-							<a href="rawdate-1.html">
-								<span>
-									데이터 보관
-								</span>
-							</a>
-						</li>
-						<li >
-							<a href="rawdate-2.html">
-								<span>
-									Rawdata
-								</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li class="eq-4 ">
-					<a href="master.html">
-						<span>마스터 메뉴</span>
-					</a>
-					<ul>
-						<li >
-							<a href="master-admin.html">
-									<span>
-										조직 및 계정 관리
-									</span>
-							</a>
-						</li>
-						<li >
-							<a href="master-notice.html">
-									<span>
-										공지사항
-									</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-		<a href="#" class="header-left-control">
-			<span class="sr-only">
-				header-left controller
-			</span>
-		</a>
-	</div>
-	<div id="header-top">
-		<div class="gnb">
-			<ul>
-				<li class="eq-0">
-					<span class="company">
-						트랜스코스모스코리아
-					</span>
-				</li>
-				<li class="eq-1 individual">
-					<span class="name">김유신</span>
-					님 환영합니다.
+<?php $pagePath = isset($_pagePath) ? $_pagePath : __FILE__; ?>
+<?php $bodyClass = "layout-page"; ?>
+<?php require_once $_SERVER["DOCUMENT_ROOT"] . "/lib.php"; ?>
+<?php require "part/app-header.php"; ?>
+<?php require "part/header.php"; ?>
+<?php require "part/header-sub.php"; ?>
 
-					<ul class="individual-list">
-						<li>
-							<a href="#">
-								로그아웃
-							</a>
-						</li>
-						<!--
-						<li>
-							<a href="#">
-								로그인
-							</a>
-						</li>
-						-->
-						<li>
-							<a href="#">
-								내정보
-							</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-		<div class="member">
-			<a href="login.html">
-				<span class="sr-only">member</span>
-			</a>
-		</div>
-	</div>
-	<!-- /#header -->
-	<div id="container"><div class="section">
-			<h2 class="section-title">
-			<span class="icon icon-this"></span>
-			운영 설정
-		</h2>
-		<div id="content">
 <form action="">
 	<div class="search-box">
 		<div class="text-box">
@@ -284,14 +91,14 @@
 <!-- tab-menu -->
 <div class="tab-menu depth-1">
 	<ul>
-		<li class="active">
+		<li>
 			<a href="#tab1">
 					<span>
 						상담 운영 설정
 					</span>
 			</a>
 		</li>
-		<li>
+		<li class="active">
 			<a href="#tab2">
 					<span>
 						챗봇 설정
@@ -301,7 +108,7 @@
 	</ul>
 </div>
 <!-- tab1 -->
-<div id="tab1" class="tab-content active">
+<div id="tab1" class="tab-content">
 	<div class="tab-menu depth-2">
 		<ul>
 			<li class="active">
@@ -1580,7 +1387,7 @@
 	</div>
 </div>
 <!-- tab2 -->
-<div id="tab2" class="tab-content">
+<div id="tab2" class="tab-content active">
 	<div class="tab-menu depth-2">
 		<ul>
 			<li class="active">
@@ -1615,146 +1422,350 @@
 	</div>
 	<div id="tab2-1" class="tab-content depth-2 active">
 		<form action="">
+			<div class="tab-menu depth-3">
+				<ul>
+					<li class="active">
+						<a href="#tab2-1-1">
+						<span>
+							인입 유형 관리
+						</span>
+						</a>
+					</li>
+				</ul>
+			</div>
 			<div id="tab2-1-1" class="tab-content depth-3 active">
-
-				<div class="tab-depth3-style">
-					<span class="title">인입 유형 사용 유/무</span>
-				</div>
-
 				<div class="radio-option">
 					<input type="radio" id="option-on" name="classify-option">
 					<label for="option-on">ON</label>
 					<input type="radio" id="option-off" name="classify-option" checked>
 					<label for="option-off">OFF</label>
 				</div>
-				<div class="tab-depth3-style">
-					<span class="title">인입 유형 설정</span>
-				</div>
-				<div class="section-setting has-tree">
-					<div class="tree-area">
-						<div class="stree">
-							<p class="sr-only"><a href="javascript: d.openAll();">open all</a> | <a href="javascript: d.closeAll();">close all</a></p>
-							<script type="text/javascript">
-								<!--
-								d = new dTree('d');
-								d.add(0,-1,'ROOT','#link');
-								d.add(1,0,'대분류','#link');
-								d.add(2,1,'중분류','#link');
-								d.add(3,1,'중분류','#link');
-								d.add(4,1,'중분류','#link');
-								d.add(5,0,'대분류','#link');
-								d.add(6,5,'중분류','#link');
-								d.add(7,5,'중분류','#link');
-								d.add(8,5,'중분류','#link');
-								d.add(9,0,'대분류','#link');
-								d.add(10,9,'중분류','#link');
-								d.add(11,9,'중분류','#link');
-								d.add(12,2,'소분류','#link');
-								d.add(13,2,'소분류','#link');
-								d.add(14,2,'소분류','#link');
-								document.write(d);
-								//-->
-							</script>
+				<div class="classify-area">
+					<div class="classify col-xs-4">
+						<div class="tit">
+					<span>
+						1차 유형(대분류)
+					</span>
+						</div>
+						<div class="con">
+							<ul class="list-classify">
+								<li>
+									<a href="#">
+								<span>
+									대분류 리스트1
+								</span>
+									</a>
+								</li>
+								<li class="active">
+									<a href="#">
+								<span>
+									대분류 리스트2
+								</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+								<span>
+									대분류 리스트3
+								</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+								<span>
+									대분류 리스트4
+								</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+								<span>
+									대분류 리스트5
+								</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+								<span>
+									대분류 리스트6
+								</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+								<span>
+									대분류 리스트7
+								</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="foot">
+							<div class="add col-xs-6">
+								<a href="#">
+							<span>
+								추가
+							</span>
+								</a>
+							</div>
+							<div class="delete col-xs-6">
+								<a href="#">
+							<span>
+								삭제
+							</span>
+								</a>
+							</div>
+							<div class="check col-xs-12 bdln">
+								<a href="#">
+									<input type="checkbox" id="adviser-1">
+									<label for="adviser-1">
+								<span>
+									상담원 연결
+								</span>
+									</label>
+								</a>
+							</div>
 						</div>
 					</div>
-					<div class="content-area">
-						<table class="table-primary">
-							<colgroup>
-								<col width="20%">
-								<col width="80%">
-							</colgroup>
-							<caption class="hidden">인입 유형관리 입력창</caption>
-							<tbody>
-							<tr>
-								<th><label for="">유형이름</label></th>
-								<td class="text-left">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="1-1-2. 소분류">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th>답변유형</th>
-								<td class="text-left">
-									<div class="search-box">
-										<div class="select-box w255">
-											<label for="select" class="select-label">옵션1</label>
-											<select name="" id="select" class="form-control">
-												<option value="">옵션1</option>
-												<option value="">옵션2</option>
-												<option value="">옵션3</option>
-											</select>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th><label for="">내용</label></th>
-								<td class="text-left">
-									<div class="form-group">
-										<textarea name="" id="" rows="15" class="form-control" placeholder="내용을 입력 해 주세요"></textarea>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th><label for="">링크제목</label></th>
-								<td class="text-left">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="제목을 입력해 주세요 예) TCK홈페이지">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th><label for="">링크URL</label></th>
-								<td class="text-left">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="URL을 입력해 주세요 예) http://trans-cosmos.co.kr">
-									</div>
-								</td>
-							</tr>
-							</tbody>
-						</table>
+					<div class="classify col-xs-4">
+						<div class="tit">
+								<span>
+									2차 유형(중분류)
+								</span>
+						</div>
+						<div class="con">
+							<ul class="list-classify">
+								<li>
+									<a href="#">
+											<span>
+												대분류 리스트2
+											</span>
+										<span>
+												중분류 리스트1
+											</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+											<span>
+												대분류 리스트2
+											</span>
+										<span>
+												중분류 리스트2
+											</span>
+									</a>
+								</li>
+								<li class="active">
+									<a href="#">
+											<span>
+												대분류 리스트2
+											</span>
+										<span>
+												중분류 리스트3
+											</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+											<span>
+												대분류 리스트2
+											</span>
+										<span>
+												중분류 리스트4
+											</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+											<span>
+												대분류 리스트2
+											</span>
+										<span>
+												중분류 리스트5
+											</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+											<span>
+												대분류 리스트2
+											</span>
+										<span>
+												중분류 리스트6
+											</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+											<span>
+												대분류 리스트2
+											</span>
+										<span>
+												중분류 리스트7
+											</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="foot">
+							<div class="add col-xs-6">
+								<a href="#">
+										<span>
+											추가
+										</span>
+								</a>
+							</div>
+							<div class="delete col-xs-6">
+								<a href="#">
+										<span>
+											삭제
+										</span>
+								</a>
+							</div>
+							<div class="check col-xs-12 bdln">
+								<a href="#">
+									<input type="checkbox" id="adviser-2">
+									<label for="adviser-2">
+											<span>
+												상담원 연결
+											</span>
+									</label>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="classify col-xs-4">
+						<div class="tit">
+								<span>
+									3차 유형(소분류)
+								</span>
+						</div>
+						<div class="con">
+							<ul class="list-classify">
+								<li>
+									<a href="#">
+											<span>
+												대분류 리스트2
+											</span>
+										<span>
+												중분류 리스트3
+											</span>
+										<span>
+												소분류 리스트1
+											</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+											<span>
+												대분류 리스트2
+											</span>
+										<span>
+												중분류 리스트3
+											</span>
+										<span>
+												소분류 리스트2
+											</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+								<span>
+									대분류 리스트2
+								</span>
+										<span>
+									중분류 리스트3
+								</span>
+										<span>
+									소분류 리스트3
+								</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+								<span>
+									대분류 리스트2
+								</span>
+										<span>
+									중분류 리스트3
+								</span>
+										<span>
+									소분류 리스트4
+								</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+								<span>
+									대분류 리스트2
+								</span>
+										<span>
+									중분류 리스트3
+								</span>
+										<span>
+									소분류 리스트5
+								</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+								<span>
+									대분류 리스트2
+								</span>
+										<span>
+									중분류 리스트3
+								</span>
+										<span>
+									소분류 리스트6
+								</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+								<span>
+									대분류 리스트2
+								</span>
+										<span>
+									중분류 리스트3
+								</span>
+										<span>
+									소분류 리스트7
+								</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="foot">
+							<div class="add col-xs-6">
+								<a href="#">
+							<span>
+								추가
+							</span>
+								</a>
+							</div>
+							<div class="delete col-xs-6">
+								<a href="#">
+							<span>
+								삭제
+							</span>
+								</a>
+							</div>
+							<div class="check col-xs-12 bdln">
+								<a href="#">
+									<input type="checkbox" id="adviser-3">
+									<label for="adviser-3">
+								<span>
+									상담원 연결
+								</span>
+									</label>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="submit-area">
 					<button type="submit" class="submit">
-						저장
-					</button>
-					<button type="button" class="edit">
-						취소
-					</button>
-				</div>
-
-				<div class="section-setting has-2content">
-					<div class="content-1">
-						<div class="tab-depth3-style">
-							<span class="title">인입 유형 설정</span>
-						</div>
-						<div class="form-group">
-							<textarea name="" id="" rows="10" class="form-control" placeholder="머릿말을 입력 하세요.
-
-예) 원하시는 메뉴를 선택하세요 "></textarea>
-						</div>
-
-					</div>
-					<div class="content-2">
-						<div class="tab-depth3-style">
-							<span class="title">인입 유형 설정</span>
-						</div>
-						<div class="form-group">
-							<textarea name="" id="" rows="10" class="form-control" placeholder="꼬릿말을 입력 하세요.
-
-예) 찾으시는 메뉴가 없으시다면, 단어를 입력해 주세요.   상담사 연결을 원하시면 0번을 눌러주세요.
-"></textarea>
-						</div>
-					</div>
-				</div>
-				<div class="submit-area">
-					<button type="button" class="edit" data-toggle="modal" data-target="#preview-cont-popup">
-						미리보기
-					</button>
-					<button type="submit" class="submit">
-						저장
+						확인
 					</button>
 				</div>
 			</div>
@@ -1763,333 +1774,6 @@
 
 	<div id="tab2-2" class="tab-content depth-2">
 		<form action="">
-
-			<div id="tab2-1-1" class="tab-content depth-3 active">
-
-				<div class="tab-depth3-style">
-					<span class="title">키워드 답변 사용 유/무</span>
-				</div>
-
-				<div class="radio-option">
-					<input type="radio" id="option-on" name="classify-option">
-					<label for="option-on">ON</label>
-					<input type="radio" id="option-off" name="classify-option" checked>
-					<label for="option-off">OFF</label>
-				</div>
-				<div class="tab-depth3-style">
-					<span class="title">인입 유형 설정</span>
-				</div>
-				<div class="section-setting has-2content">
-					<div class="content-1 left-side">
-						<div class="con-wrap">
-							<div class="search-box">
-								<div class="text-box">
-									<label for="" class="sr-only">회사명 검색창</label>
-									<input type="text" class="form-control" placeholder="회사명">
-								</div>
-								<button type="submit" class="submit-btn">
-									<span class="sr-only">
-										검색버튼
-									</span>
-								</button>
-								<button type="button" class="all-btn">
-									<span>
-										초기화
-									</span>
-								</button>
-							</div>
-
-							<div class="search-box text-right">
-								<button type="button" class="all-btn">
-									<span>
-										삭제
-									</span>
-								</button>
-								<button type="button" class="all-btn">
-									<span>
-										사용
-									</span>
-								</button>
-								<button type="button" class="all-btn">
-									<span>
-										사용안함
-									</span>
-								</button>
-								<button type="button" class="all-btn">
-									<span>
-										등록
-									</span>
-								</button>
-							</div>
-
-							<div class="result-box">
-								<table class="table-primary table-select">
-									<thead>
-									<tr>
-										<th>
-											<label for="">
-												<input type="checkbox">
-											</label>
-										</th>
-										<th>키워드</th>
-										<th>사용여부</th>
-										<th>최종수정자</th>
-									</tr>
-									</thead>
-									<tbody>
-									<tr>
-										<td>
-											<label for="">
-												<input type="checkbox">
-											</label>
-										</td>
-										<td>
-											키워드
-										</td>
-										<td>
-											사용여부
-										</td>
-										<td>
-											최종수정자
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="">
-												<input type="checkbox">
-											</label>
-										</td>
-										<td>
-
-										</td>
-										<td>
-
-										</td>
-										<td>
-
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="">
-												<input type="checkbox">
-											</label>
-										</td>
-										<td>
-
-										</td>
-										<td>
-
-										</td>
-										<td>
-
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="">
-												<input type="checkbox">
-											</label>
-										</td>
-										<td>
-
-										</td>
-										<td>
-
-										</td>
-										<td>
-
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="">
-												<input type="checkbox">
-											</label>
-										</td>
-										<td>
-
-										</td>
-										<td>
-
-										</td>
-										<td>
-
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="">
-												<input type="checkbox">
-											</label>
-										</td>
-										<td>
-
-										</td>
-										<td>
-
-										</td>
-										<td>
-
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="">
-												<input type="checkbox">
-											</label>
-										</td>
-										<td>
-
-										</td>
-										<td>
-
-										</td>
-										<td>
-
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label for="">
-												<input type="checkbox">
-											</label>
-										</td>
-										<td>
-
-										</td>
-										<td>
-
-										</td>
-										<td>
-
-										</td>
-									</tr>
-									</tbody>
-								</table>
-							</div>
-
-							<div class="result-foot">
-								<div class="page-control">
-									<a href="#" class="prev">이전</a>
-									<ul class="pagination">
-										<li class="active"><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a href="#">4</a></li>
-										<li><a href="#">5</a></li>
-									</ul>
-									<a href="#" class="next">다음</a>
-								</div>
-							</div>
-
-						</div>
-					</div>
-					<div class="content-2 right-side">
-						<div class="con-wrap">
-							<table class="table-primary">
-								<colgroup>
-									<col width="20%">
-									<col width="80%">
-								</colgroup>
-								<caption class="hidden">인입 유형관리 입력창</caption>
-								<tbody>
-								<tr>
-									<th><label for="">유형이름</label></th>
-									<td class="text-left">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="1-1-2. 소분류">
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th>답변유형</th>
-									<td class="text-left">
-										<div class="search-box">
-											<div class="select-box w255">
-												<label for="select" class="select-label">옵션1</label>
-												<select name="" id="select" class="form-control">
-													<option value="">옵션1</option>
-													<option value="">옵션2</option>
-													<option value="">옵션3</option>
-												</select>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th><label for="">내용</label></th>
-									<td class="text-left">
-										<div class="form-group">
-											<textarea name="" id="" rows="15" class="form-control" placeholder="내용을 입력 해 주세요"></textarea>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th><label for="">링크제목</label></th>
-									<td class="text-left">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="제목을 입력해 주세요 예) TCK홈페이지">
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th><label for="">링크URL</label></th>
-									<td class="text-left">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="URL을 입력해 주세요 예) http://trans-cosmos.co.kr">
-										</div>
-									</td>
-								</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-				<div class="submit-area">
-					<button type="submit" class="submit">
-						저장
-					</button>
-					<button type="button" class="edit">
-						취소
-					</button>
-				</div>
-
-				<div class="section-setting has-2content">
-					<div class="content-1">
-						<div class="tab-depth3-style">
-							<span class="title">인입 유형 설정</span>
-						</div>
-						<div class="form-group">
-							<textarea name="" id="" rows="10" class="form-control" placeholder="머릿말을 입력 하세요.
-
-예) 원하시는 메뉴를 선택하세요 "></textarea>
-						</div>
-
-					</div>
-					<div class="content-2">
-						<div class="tab-depth3-style">
-							<span class="title">인입 유형 설정</span>
-						</div>
-						<div class="form-group">
-							<textarea name="" id="" rows="10" class="form-control" placeholder="꼬릿말을 입력 하세요.
-
-예) 찾으시는 메뉴가 없으시다면, 단어를 입력해 주세요.   상담사 연결을 원하시면 0번을 눌러주세요.
-"></textarea>
-						</div>
-					</div>
-				</div>
-				<div class="submit-area">
-					<button type="button" class="edit" data-toggle="modal" data-target="#preview-cont-popup">
-						미리보기
-					</button>
-					<button type="submit" class="submit">
-						저장
-					</button>
-				</div>
-			</div>
-
-			<!--
 			<div class="tab-menu depth-3">
 				<ul>
 					<li class="active">
@@ -2487,7 +2171,6 @@
 					</button>
 				</div>
 			</div>
-			-->
 		</form>
 	</div>
 	<div id="tab2-3" class="tab-content depth-2">
@@ -2504,13 +2187,10 @@
 				</ul>
 			</div>
 			<div id="tab2-3-1" class="tab-content depth-3 active">
-				<table class="table-form custom-0">
-					<col width="80">
-					<col width="100">
-					<col width="70">
+				<table class="table-form">
+					<col width="180">
 					<col width="*">
-					<col width="70">
-					<col width="170">
+					<col width="">
 					<col width="175">
 					<thead>
 					<tr>
@@ -2518,12 +2198,9 @@
 							항목
 						</th>
 						<th>
-							발송시점
-						</th>
-						<th colspan="2">
 							카카오 기본 제공 메시지(발송 시점)
 						</th>
-						<th colspan="2">
+						<th>
 							추가 자동 메시지
 						</th>
 						<th>
@@ -2536,12 +2213,6 @@
 						<th>
 							첫인사
 						</th>
-						<th>
-							세션시작시
-						</th>
-						<td>
-							<strong>A1</strong>
-						</td>
 						<td class="text-left">
 							<strong class="orange-tit">
 								상담 시작 메시지 (대화 세션 시작 시)
@@ -2550,19 +2221,15 @@
 									1:1 채팅을 시작합니다. 채팅 내용은 상담 품질 관리를 위해 {#위탁사명}에 저장됩니다. 대화를 원치 않으시면 대화방 나가기를 해주세요.
 								</span>
 						</td>
-						<td>
-							<strong>T1</strong>
-						</td>
 						<td class="text-left">
-							<textarea style="resize: none;" name="" id="" rows="3" class="form-control">고객님, 안녕하세요. {#프로젝트명} 고객센터입니다. 원하시는 서비스를 입력해주시기 바랍니다.</textarea>
+							<div class="textarea-type">
+								고객님, 안녕하세요. {#프로젝트명} 고객센터입니다. 원하시는 서비스를 입력해주시기 바랍니다.
+							</div>
 						</td>
 						<td>
 							<div class="button-edit">
 								<button type="button">
-									저장
-								</button>
-								<button type="button">
-									삭제
+									편집하기
 								</button>
 								<div class="switch">
 									<input type="radio" name="switch-0" id="switch1-0" class="switch1" checked>
@@ -2579,38 +2246,25 @@
 					</tr>
 					<tr>
 						<th>
-							상담사
-							연결 지연
+							상담불가
 						</th>
-						<th>
-							상담사 연결
-							지연고지
-							설정시간
-						</th>
-						<td>
-							<strong>S1</strong>
-						</td>
 						<td class="text-left">
 							<strong class="orange-tit">
-								상담 지연 메시지
+								응답 실패 메시지 (딜러사 서버 응답이 오지 않을 시)
 							</strong>
 							<span class="pre">
-								상담원 연결이 지연되고 있습니다. 잠시 후 다시 이용해주세요
-							</span>
-						</td>
-						<td>
-							<strong>T2</strong>
+									#{발신프로필명}와/과의 연결이 원활하지 않습니다.<br>잠시 후 다시 채팅을 요청해주세요.
+								</span>
 						</td>
 						<td class="text-left">
-							<textarea style="resize: none;" name="" id="" rows="3" class="form-control">현재 대기 중인 고객님 수는 {대기자 수}명 입니다.</textarea>
+							<div class="textarea-type">
+								불편을 드려 죄송합니다.
+							</div>
 						</td>
 						<td>
 							<div class="button-edit">
 								<button type="button">
-									저장
-								</button>
-								<button type="button">
-									삭제
+									편집하기
 								</button>
 								<div class="switch">
 									<input type="radio" name="switch-1" id="switch1-1" class="switch1" checked>
@@ -2627,37 +2281,25 @@
 					</tr>
 					<tr>
 						<th>
-							근무 외
-							시간 처리
+							상담사 연결 지연
 						</th>
-						<th>
-							근무 시간외
-							채팅 인입시
-						</th>
-						<td>
-							<strong>S2</strong>
-						</td>
 						<td class="text-left">
 							<strong class="orange-tit">
-								상담 부재 메시지
+								상담 지연 메시지 (상담사 연결 지연 고지 설정시간)
 							</strong>
 							<span class="pre">
-								지금은 상담 가능 시간이 아닙니다.
-							</span>
-						</td>
-						<td>
-							<strong>T3</strong>
+									상담원 연결이 지연되고 있습니다. 잠시 후 다시 이용해주세요
+								</span>
 						</td>
 						<td class="text-left">
-							<textarea style="resize: none;" name="" id="" rows="3" class="form-control">상담을 원하시면 {근무시간} 중에 연락 주시기 바랍니다.</textarea>
+							<div class="textarea-type">
+								현재 대기 중인 고객님 수는 {대기자 수}명 입니다.
+							</div>
 						</td>
 						<td>
 							<div class="button-edit">
 								<button type="button">
-									저장
-								</button>
-								<button type="button">
-									삭제
+									편집하기
 								</button>
 								<div class="switch">
 									<input type="radio" name="switch-2" id="switch1-2" class="switch1" checked>
@@ -2674,36 +2316,25 @@
 					</tr>
 					<tr>
 						<th>
-							자동종료
+							근무외 시간처리
 						</th>
-						<th>
-							자동종료
-							설정시간
-						</th>
-						<td>
-							<strong>S3</strong>
-						</td>
 						<td class="text-left">
 							<strong class="orange-tit">
-								무응답 종료 메세지
+								상담 부재 메시지 (근무 시간 외 채팅 인입 시)
 							</strong>
 							<span class="pre">
-								일정 시간 동안 고객님의 응답이 없어 채팅을 종료합니다
-							</span>
-						</td>
-						<td>
-							<strong>T4</strong>
+									지금은 상담 가능 시간이 아닙니다.
+								</span>
 						</td>
 						<td class="text-left">
-							<textarea style="resize: none;" name="" id="" rows="3" class="form-control">상담을 원하시면 다시 채팅을 요청해주세요.</textarea>
+							<div class="textarea-type">
+								상담을 원하시면 {근무시간} 중에 연락 주시기 바랍니다.
+							</div>
 						</td>
 						<td>
 							<div class="button-edit">
 								<button type="button">
-									저장
-								</button>
-								<button type="button">
-									삭제
+									편집하기
 								</button>
 								<div class="switch">
 									<input type="radio" name="switch-3" id="switch1-3" class="switch1" checked>
@@ -2720,38 +2351,25 @@
 					</tr>
 					<tr>
 						<th>
-							자동종료
-							1차 고지
+							자동 종료 1차 고지
 						</th>
-						<th>
-							자동종료
-							1차 고지
-							설정시간
-						</th>
-						<td>
-							<strong></strong>
-						</td>
 						<td class="text-left">
 							<strong class="orange-tit">
-
+								없음 (자동종료 1차 고지 설정시간)
 							</strong>
 							<span class="pre">
 
-							</span>
-						</td>
-						<td>
-							<strong>T5</strong>
+								</span>
 						</td>
 						<td class="text-left">
-							<textarea style="resize: none;" name="" id="" rows="3" class="form-control">고객님의 무응답 시간이 길어질 경우 {자동종료시간}후에 자동 종료됩니다.</textarea>
+							<div class="textarea-type">
+								고객님의 무응답 시간이 길어질 경우 {자동종료시간}후에 자동 종료됩니다.
+							</div>
 						</td>
 						<td>
 							<div class="button-edit">
 								<button type="button">
-									저장
-								</button>
-								<button type="button">
-									삭제
+									편집하기
 								</button>
 								<div class="switch">
 									<input type="radio" name="switch-4" id="switch1-4" class="switch1" checked>
@@ -2768,39 +2386,25 @@
 					</tr>
 					<tr>
 						<th>
-							Auto
-							Answer
-							모드
+							자동종료
 						</th>
-						<th>
-							Auto
-							Answer
-							모드 활성화시
-						</th>
-						<td>
-							<strong></strong>
-						</td>
 						<td class="text-left">
 							<strong class="orange-tit">
-
+								무응답 종료 메시지 (자동종료시간 설정시간)
 							</strong>
 							<span class="pre">
-
-							</span>
-						</td>
-						<td>
-							<strong>T6</strong>
+									일정 시간 동안 고객님의 응답이 없어 채팅을 종료합니다.
+								</span>
 						</td>
 						<td class="text-left">
-							<textarea style="resize: none;" name="" id="" rows="3" class="form-control">연결이 원활하지 않아, 채팅 서비스가 중단되었습니다. 신속히 복구 하도록 하겠습니다</textarea>
+							<div class="textarea-type">
+								상담을 원하시면 다시 채팅을 요청해주세요.
+							</div>
 						</td>
 						<td>
 							<div class="button-edit">
 								<button type="button">
-									저장
-								</button>
-								<button type="button">
-									삭제
+									편집하기
 								</button>
 								<div class="switch">
 									<input type="radio" name="switch-5" id="switch1-5" class="switch1" checked>
@@ -2817,39 +2421,26 @@
 					</tr>
 					<tr>
 						<th>
-							중계서버
-							비활성화
+							상담종료시 액션
 						</th>
-						<th>
-							중계서버
-							비활성화
-							활성화시
-						</th>
-						<td>
-							<strong></strong>
-						</td>
 						<td class="text-left">
 							<strong class="orange-tit">
-
+								무응답 종료 메시지 (대화 종료 시)
 							</strong>
 							<span class="pre">
 
-							</span>
-						</td>
-						<td>
-							<strong>T7</strong>
+								</span>
 						</td>
 						<td class="text-left">
-							<textarea style="resize: none;" name="" id="" rows="3" class="form-control">예기치 않은 문제로 채팅 서비스가 중단됩니다.
-불편을 드려 죄송합니다</textarea>
+							<div class="textarea-type">
+								상담사와의 대화는 어떠셨나요?
+								{고객만족도 조사 URL}
+							</div>
 						</td>
 						<td>
 							<div class="button-edit">
 								<button type="button">
-									저장
-								</button>
-								<button type="button">
-									삭제
+									편집하기
 								</button>
 								<div class="switch">
 									<input type="radio" name="switch-6" id="switch1-6" class="switch1" checked>
@@ -2858,46 +2449,6 @@
 									</label>
 									<input type="radio" name="switch-6" id="switch0-6" class="switch0">
 									<label for="switch0-6">
-										OFF
-									</label>
-								</div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<th>
-							<textarea style="resize: none;" name="" id="" rows="3" class="form-control"></textarea>
-						</th>
-						<th>
-							<textarea style="resize: none;" name="" id="" rows="3" class="form-control"></textarea>
-						</th>
-						<td>
-							<textarea style="resize: none;" name="" id="" rows="3" class="form-control"></textarea>
-						</td>
-						<td class="text-left">
-							<textarea style="resize: none;" name="" id="" rows="3" class="form-control"></textarea>
-						</td>
-						<td>
-							<textarea style="resize: none;" name="" id="" rows="3" class="form-control"></textarea>
-						</td>
-						<td class="text-left">
-							<textarea style="resize: none;" name="" id="" rows="3" class="form-control"></textarea>
-						</td>
-						<td>
-							<div class="button-edit">
-								<button type="button">
-									저장
-								</button>
-								<button type="button">
-									삭제
-								</button>
-								<div class="switch">
-									<input type="radio" name="switch-7" id="switch1-7" class="switch1" checked>
-									<label for="switch1-7">
-										ON
-									</label>
-									<input type="radio" name="switch-7" id="switch0-7" class="switch0">
-									<label for="switch0-7">
 										OFF
 									</label>
 								</div>
@@ -3098,26 +2649,10 @@
 		</span>
 </div>
 
-</div>
-<!-- /#content -->
-</div>
-<!-- /.section --></div>
-<!-- /#container -->
-<div id="footer">
-	<p class="copyright">
-		ⓒ 2017. transcosmos korea Inc. All rights reserved.
-	</p>
-	<a class="foot-logo">
-		<span class="sr-only">transcosmos</span>
-	</a>
-</div>
-<!-- /#footer -->
-</div>
-<!-- /#wrap -->
-<!-- App Footer.html -->
-</body>
-</html>
-<!-- //App Footer.html -->
+<?php require "part/footer-sub.php"; ?>
+<?php require "part/footer.php"; ?>
+<?php require "part/app-footer.php"; ?>
+
 
 <!-- 팝업 -->
 <div id="add-cont-popup" role="dialog" class="modal fade">
@@ -3352,60 +2887,6 @@
 							확인
 						</button>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- //팝업 -->
-
-
-<!-- 팝업 -->
-<div id="preview-cont-popup" role="dialog" class="modal fade">
-	<div class="modal-dialog">
-		<div id="detail-popup" class="modal-content">
-			<h2 class="sr-only">
-				팝업창
-			</h2>
-			<div class="head">
-				<h3 class="title">미리보기</h3>
-				<a href="#" class="close-popup" data-dismiss="modal">
-					<span class="sr-only">
-						팝업 닫기
-					</span>
-				</a>
-			</div>
-			<div class="cont">
-				<div class="cont-box">
-					<div class="text-message">
-						<p>원하시는 메뉴번호나 메뉴명을 입력해주세요.</p>
-						<p>&nbsp;</p>
-						<p>1.대분류</p>
-						<p>2.대분류</p>
-						<p>3.대분류</p>
-						<p>&nbsp;</p>
-						<p>&nbsp;</p>
-						<p>찾으시는 메뉴가 없으시다면, 원하시는 메뉴를 단어로 입력 해 주세요.</p>
-						<p>상담사 연결을 원하시면 “0” 을 입력해 주세요.</p>
-					</div>
-					<div class="text-message right">
-						<p>원하시는 메뉴번호나 메뉴명을 입력해주세요.<br>
-							<br>
-							1.대분류<br>
-							2.대분류<br>
-							3.대분류<br>
-							<br>
-							<br>
-							찾으시는 메뉴가 없으시다면, 원하시는 메뉴를 단어로 입력 해 주세요.<br>
-							상담사 연결을 원하시면 “0” 을 입력해 주세요.</p>
-					</div>
-
-
-				</div>
-				<div class="submit-area">
-					<button type="submit" class="submit">
-						확인
-					</button>
 				</div>
 			</div>
 		</div>

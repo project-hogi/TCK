@@ -1557,7 +1557,7 @@
 					</div>
 				</div>
 				<div class="submit-area">
-					<button type="button" class="edit">
+					<button type="button" class="edit" data-toggle="modal" data-target="#preview-cont-popup">
 						미리보기
 					</button>
 					<button type="submit" class="submit">
@@ -1887,7 +1887,7 @@
 					</div>
 				</div>
 				<div class="submit-area">
-					<button type="button" class="edit">
+					<button type="button" class="edit" data-toggle="modal" data-target="#preview-cont-popup">
 						미리보기
 					</button>
 					<button type="submit" class="submit">
@@ -3154,7 +3154,7 @@
 <!-- 팝업 -->
 <div id="preview-cont-popup" role="dialog" class="modal fade">
 	<div class="modal-dialog">
-		<div id="detail-popup" class="modal-content setting w500">
+		<div id="detail-popup" class="modal-content">
 			<h2 class="sr-only">
 				팝업창
 			</h2>
@@ -3168,7 +3168,28 @@
 			</div>
 			<div class="cont">
 				<div class="cont-box">
-
+					<div class="text-message">
+						<p>원하시는 메뉴번호나 메뉴명을 입력해주세요.</p>
+						<p>&nbsp;</p>
+						<p>1.대분류</p>
+						<p>2.대분류</p>
+						<p>3.대분류</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>찾으시는 메뉴가 없으시다면, 원하시는 메뉴를 단어로 입력 해 주세요.</p>
+						<p>상담사 연결을 원하시면 “0” 을 입력해 주세요.</p>
+					</div>
+					<div class="text-message right">
+						<p>원하시는 메뉴번호나 메뉴명을 입력해주세요.<br>
+							<br>
+							1.대분류<br>
+							2.대분류<br>
+							3.대분류<br>
+							<br>
+							<br>
+							찾으시는 메뉴가 없으시다면, 원하시는 메뉴를 단어로 입력 해 주세요.<br>
+							상담사 연결을 원하시면 “0” 을 입력해 주세요.</p>
+					</div>
 
 
 				</div>

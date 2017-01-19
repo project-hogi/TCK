@@ -374,3 +374,55 @@ div.input-popup{
 	
 	
 }
+
+/* 미리보기 */
+#preview-cont-popup{
+	.modal-dialog{
+		width: 360px;
+		
+		#detail-popup{
+			width: 100%;
+		}
+		
+		.detail-popup{
+			width: 100%;
+		}
+		
+		.cont-box{
+			height: 500px;
+			overflow-y: auto;
+			
+			&:after{
+				clear: both;
+				display: block;
+				content: '';
+			}
+			
+			.text-message{
+				float: left;
+				width: 80%;
+				padding: 4%;
+				overflow: hidden;
+				font-size: 12px;
+				line-height: 1;
+				border: 1px solid #cecece ;
+				border-radius: 3px;
+				background-color: #f6f6f6;
+				text-align: left;
+				margin-bottom: 20px;
+				word-break: break-all;
+				
+				*{
+					font-size: 12px;
+					line-height: 1;
+					text-align: left;
+					margin: 0;
+				}
+				
+				&.right{
+					float: right;
+				}
+			}
+		}
+	}
+}
